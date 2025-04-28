@@ -1,0 +1,16 @@
+@media (max-width: 767px) {  
+    .feedback {
+ 
+        font-size: 22px;
+        line-height: 30px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .feedback {
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 52px;
+        }
+    }

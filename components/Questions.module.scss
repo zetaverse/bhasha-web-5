@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+    .FAQQuestion {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25px;
+
+        svg{
+            width: 23px;
+            height: 23px;
+        }
+      }
+    
+      .FAQAns {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+      }
+}
+@media (min-width: 768px) {
+    .FAQQuestion {
+        font-weight: 400;
+        font-size: 29px;
+        line-height: 43px;
+        svg{
+            width: 55px;
+            height: 55px;
+        }
+      }
+      .FAQAns{
+        line-height: 43px;
+        font-weight: 400;
+        font-size: 21px;
+        max-width: 85%;
+      }
+}

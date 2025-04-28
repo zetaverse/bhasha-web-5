@@ -1,0 +1,44 @@
+@media (max-width: 767px) {
+    .reviewer{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .reviewerOcc{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .review{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .readbtn{
+        color: rgb(75, 42, 173) ;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 5px;
+      }  
+}
+@media (min-width: 768px) {
+    .reviewer{
+        font-weight: 600;
+        font-size: 20px;
+        padding-left: 1rem;
+    }
+    .reviewerOcc{
+        font-weight: 400;
+        font-size: 15px;
+        padding-left: 1rem;
+    }
+    .review{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .readbtn{
+        color: rgb(75, 42, 173) ;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 5px;
+      }    
+}

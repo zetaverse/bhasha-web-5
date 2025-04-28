@@ -1,0 +1,80 @@
+.bgn-wf-wrapper * {
+  box-sizing: border-box;
+}
+
+.bgn-wf-wrapper {
+  margin: auto;
+  border: none;
+  background-color: #F6F6F6;
+  color: #333;
+}
+
+.bgn-wf-row {
+  display: flex;
+}
+
+
+.bgn-wf-label {
+  padding: 7px 20px 5px 35px;
+  width: 26%;
+  border: 0;
+  align-self: center;
+  word-break: break-word;
+  position: relative;
+}
+
+.bgn-wf-field {
+  vertical-align: top;
+  text-align: left;
+  word-break: break-word;
+  border: 0;
+  flex: 1;
+  align-self: flex-start
+  
+
+}
+.bgn-wf-field input::placeholder{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 66px;
+
+}
+
+.bgn-star {
+  color: #bb0707;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+  font-size: 14px;
+  text-transform: inherit;
+  position: absolute;
+}
+
+@media screen and (max-width: 590px) {
+  .bgn-wf-wrapper {
+    max-width: 80% !Important;
+    border: 0;
+  }
+
+  .bgn-wf-row,
+  .bgn-wf-label,
+  .bgn-wf-field {
+    display: block;
+    width: 100%;
+  }
+
+  .bgn-wf-field input[type=text],
+  .bgn-wf-field select,
+  .bgn-wf-field textarea {
+    width: 100% !important;
+  }
+
+  .bgn-wf-field div>select {
+    width: auto !important;
+  }
+
+  .bgn-wf-label:empty {
+    display: none;
+  }
+
+}

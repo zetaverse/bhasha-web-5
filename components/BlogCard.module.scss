@@ -1,0 +1,28 @@
+.blogCoverImg{
+    width: 330px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.blogCategory{
+font-size: 12px;
+font-weight: 400;
+line-height: 22px;
+text-align: start;
+color: #9C8881;
+padding: 12px 2px 4px 2px;
+
+}
+.blogTitle{
+    display: flex;
+    flex-wrap: wrap;
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+max-width: 360px;
+color: #1A1715;
+
+
+}

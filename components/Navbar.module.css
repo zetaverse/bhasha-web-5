@@ -1,0 +1,41 @@
+@media (max-width: 767px) {
+    .navHeight{
+        height: auto;
+    }
+    .navLinkFont{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .navDropdownText{
+        font-size: 17px;
+        font-weight: 400;
+    }
+  }
+  @media (min-width: 768px) {
+    .navHeight{
+        height: auto;
+    }
+    .navLinkFont{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .navDropdownText{
+        font-size: 17px;
+        font-weight: 500;
+    }
+  }
+  @media (min-width: 1130px) and (max-width: 1290px) {
+    .navLinkFont{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .navDropdownText{
+        font-size: 15px;
+        font-weight: 400;
+    }
+  }
+  @media (min-width: 1130px) {
+    .navHeight{
+        height: 80px;
+    }
+}

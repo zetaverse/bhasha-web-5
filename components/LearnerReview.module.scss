@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+    .reviewerName{
+        // line-height: 30px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 35px; 
+       
+    }
+    .customButton{
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+@media (min-width: 768px){
+.customButton{
+    font-weight: 500;
+    font-size: 18px;
+}
+.reviewerName{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 52px; 
+    
+}
+}

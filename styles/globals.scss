@@ -1,0 +1,499 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1130px,
+  xl: 1226px,
+  xxl: 1400px
+); 
+
+$font-family-sans-serif: 'Poppins';
+$font-family-monospace: 'Poppins';
+$font-family-base: 'Poppins';
+
+$primary: #4B2AAD;
+$secondary: #F3F5F7;
+$tertiary: #ECF2FF;
+$info: #FF9D28;
+$light: #FDFBF9;
+$dark: #1A1715;
+$second: #F6F6F6;
+$pagination-bg: #D9D9D9 ;
+$pagination-color:#1A1715;
+$pagination-active-bg: #5C5856;
+$pagination-disabled-color:#FDFBF9;
+$pagination-focus-box-shadow: none;
+
+$font-weight-light: 400;
+$font-weight-normal: 500;
+$font-weight-bold: 600;
+$font-size-base: 1.125rem;
+
+
+$font-size-lg: 1.25rem;
+$h1-font-size: 50px;
+$h2-font-size: 36px;
+$h3-font-size: 26px;
+$headings-color: $dark;
+
+$nav-link-font-size: 18px;
+$nav-link-font-weight: 500;
+$navbar: #1A1715;
+$navbar-light-hover-color: $primary;
+
+
+$box-shadow-sm: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+$dropdown-link-hover-bg: #ECF2FF;
+
+
+$accordion-bg: #ECF2FF;
+$accordion-button-active-color: $primary;
+$accordion-icon-active-color: $primary;
+$accordion-button-active-bg: $tertiary;
+$accordion-border-width: none;
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-width: 25px;
+$accordion-icon-color: $primary;
+
+
+
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import 'react-multi-carousel/lib/styles.css';
+
+.root{
+--primary: #4B2AAD;
+--secondary: #F3F5F7;
+--tertiary: #ECF2FF;
+--info: #FF9D28;
+--light: #FDFBF9;
+--dark: #1A1715;
+--second: #F6F6F6;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: auto;
+  width: 100vw;
+  font-family: 'Poppins';
+}
+
+body.modal-open .allContent{
+  -webkit-filter: blur(3.5px);
+    -moz-filter: blur(3.5px);
+    -o-filter: blur(3.5px);
+    -ms-filter: blur(3.5px);
+    filter: blur(3.5px);
+}
+
+//Navbar dropdown
+@media (min-width: 1130px) {
+  .dropdown >.dropdown-menu{
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms ease-in, visibility 200ms ease-in;
+  }
+  .dropdown:hover >.dropdown-menu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    
+  }
+  .dropdown >.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+  }
+}
+
+#privacy-policy, #terms-and-conditions{
+  h1{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  h2{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  h3{
+    font-size: 16px;
+    line-height: 26px;
+  }
+  p, li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+//Small screens
+@media (max-width: 767px) {
+  h1{
+      font-weight: 600;
+      font-size: 27px;
+      line-height: 43px;
+  }
+  h2{
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 32px; 
+  }
+  h3{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+  }
+  p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  #course-curriculum{
+    padding-top: 100px;
+    margin-top: -86px;
+  
+    p{
+      font-size: 16px;
+      font-weight: 400;
+    }
+    li {
+      font-size: 14px;
+    }
+    button {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    h2{
+      font-size: 26px;
+    }
+  }
+  .image-container {
+
+    width: 100%;
+
+    >div {
+      position: unset !important;
+    }
+
+    .image {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+    }
+    .imageCourse {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+      // padding: 2rem;
+    }
+  
+}
+}
+//medium and large screens
+@media (min-width: 768px) {
+  #homeIntroduction{
+    h1{
+      font-size: 46px;
+    }
+  }
+  h1{
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 66px;
+  }
+  h2{
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 52px; 
+  }
+  h3{
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 52px;
+  }
+  p{
+    font-size: 18px;
+    font-weight: 400;
+  }
+  #course-curriculum{
+    padding-top: 150px;
+    margin-top: -86px;
+  
+    p{
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
+
+//
+
+.horizontalScroll{
+  overflow: auto;
+  white-space: nowrap;
+  margin: 1rem;
+  
+}
+
+@media (max-width: 767px) {
+  #similar-Courses .carousel-inner .carousel-item>div {
+    display: none;
+  }
+
+  #similar-Courses .carousel-inner .carousel-item>div:first-child {
+    display: flex;
+  }
+    
+  }
+
+  .otherCourseImage {
+    width: 150;
+    height: 150;
+  }
+
+  #testimonial2 {
+    p {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    a,
+    button {
+      font-size: 16px;
+    }
+
+  }
+
+  p {
+    line-height: 24px;
+  }
+
+  #curriculum {
+    width: 100%;
+  }
+  .requestButton{
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+
+#similar-Courses .carousel-inner .carousel-item.active,
+#similar-Courses .carousel-inner .carousel-item-next,
+#similar-Courses .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+// /* medium and up screens */
+@media (min-width: 768px) {
+
+  #similar-Courses .carousel-inner .carousel-item-end.active,
+  #similar-Courses .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  #similar-Courses .carousel-inner .carousel-item-start.active,
+  #similar-Courses .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+
+
+
+  #footerNew{
+    h3{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px;
+      color: #1A1715;
+    }
+    .footerNewLink{
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 32px;
+      color: #5C5856;
+      text-decoration: none;
+    }
+    .footerNewLink:hover{
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    .contactLink{
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 32px;
+      color: #5C5856;
+      text-decoration: none;
+      padding-left: 1rem;
+    }
+  }
+  
+
+  .image-container {
+    // position: relative;
+    width: 100%;
+    // aspect-ratio: 4/3;
+
+    >div {
+      position: unset !important;
+    }
+
+    .image {
+      // object-fit: contain;
+      // padding: 1rem;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+    }
+
+    .imageCourse {
+      // object-fit: contain;
+      // padding: 2rem; 
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+      // padding: 1rem;
+    }
+  }
+
+  .otherCourseImage {
+    width: 300;
+    height: 300;
+  }
+
+
+
+  p {
+    line-height: 27px;
+  }
+
+
+
+
+  #curriculum {
+    width: 99%;
+  }
+  .requestButton{
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+#similar-Courses .carousel-inner .carousel-item-end,
+#similar-Courses .carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+.socialIcon {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  color: white;
+}
+
+.socialIcon:hover {
+  color: var(--secondary);
+}
+
+.customModal{
+  display: block;
+  position:static;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  z-index: 1;
+}
+.modalContent{
+  display: flex;
+  justify-content: center;
+  position:static;
+  top: 5rem;
+  overflow: auto;
+  opacity: 1;
+  z-index: 2;
+}
+dialog:backdrop{
+  background-color: lightblue;
+}
+
+.blog-content img {
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+// Terms and Conditions List Styles
+.terms-list {
+  margin: 1rem 0;
+  padding-left: 2.5rem;
+  
+  li {
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+    //color: #5C5856;  // Using the same color as privacy policy text
+    font-size: 1rem;
+    
+    &::marker {
+      color: #4B2AAD;  // Primary color for bullets/numbers
+    }
+  }
+  
+  &.numbered {
+    counter-reset: terms-counter;
+    
+    li {
+      list-style: none;
+      counter-increment: terms-counter;
+      position: relative;
+      
+      &::before {
+        content: counter(terms-counter) ".";
+        color: #4B2AAD;
+        font-weight: 500;
+        position: absolute;
+        left: -2rem;
+      }
+    }
+  }
+}
+
+// Add responsive styles
+@media (max-width: 768px) {
+  .terms-list {
+    padding-left: 2rem;
+    
+    li {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
