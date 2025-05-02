@@ -110,7 +110,7 @@ function LearnerType(props) {
           </div>
         </div>
       </div>
-      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} />
+      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} language={language} />
     </section>
   );
 }

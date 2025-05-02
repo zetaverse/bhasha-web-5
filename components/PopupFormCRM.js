@@ -2,7 +2,6 @@ import BiginForm from './BiginForm';
 
 export default function PopupFormCRM(props) {
   const { language, UTMSource, UTMMedium, UTMCampaign, isModalOpen, closeModal } = props;
-
   return (
     <div
       className={`transition-opacity duration-150 ease-linear fixed left-0 top-0 w-full h-full z-1055 ${
@@ -12,8 +11,9 @@ export default function PopupFormCRM(props) {
         backdropFilter: 'blur(5px)',
         backgroundColor: 'rgba(0,0,0, 0.5)'
       }}
-      id="PopupFormCRM"
-      aria-labelledby="popupLabel"
+      id="staticBackdrop"
+      tabIndex="-1"
+      aria-labelledby="staticBackdropLabel"
       aria-hidden={!isModalOpen}
     >
       <div

@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 function Introduction(props) {
   const { heading, headingTxt, features, imageURL } = props.introduction;
-  // const { language } = props;
+  const { language } = props;
   const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
 
   // Function to open the modal
@@ -157,7 +157,7 @@ function Introduction(props) {
           </div>
         </div>
       </div>
-      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} />
+      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} language={language} />
     </div>
     
   );

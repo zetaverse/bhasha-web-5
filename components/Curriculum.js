@@ -6,7 +6,7 @@ import Syllabus from './syllabus';
 
 function Curriculum(props) {
   const { details, coursesDetails, showSyllabus } = props.curriculumDetail;
-  const { modalId, curriculumHeadline } = props;
+  const { modalId, curriculumHeadline, language } = props;
   const [openCourseId, setOpenCourseId] = useState(coursesDetails[0]?.courseID || null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeSyllabus, setActiveSyllabus] = useState(null);
@@ -117,7 +117,7 @@ function Curriculum(props) {
           </div>
         ))}
       </div>
-      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} />
+      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} language={language} />
       
       {coursesDetails.map((course) => (
         course.courseSyllabus && (

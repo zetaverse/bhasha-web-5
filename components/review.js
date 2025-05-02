@@ -16,19 +16,19 @@ function Review(props) {
   const initial = name ? name.charAt(0).toUpperCase() : '';
 
   return (
-    <div className="lg:!px-4">
-      <div className="flex flex-row h-auto justify-center lg:justify-start">
+    <div className="md:!px-4 text-[#212529]">
+      <div className="flex flex-row !h-auto justify-center items-start lg:justify-start">
         {imageURL ? (
           <Image
             width={70}
             height={70}
-            className="rounded-circle"
+            className="object-contain"
             src={imageURL}
             alt={`Online ${language || ''} Classes - Review by ${name}`}
           />
         ) : (
           <div 
-            className="rounded-circle flex items-center justify-center"
+            className="!rounded-circle !flex !items-center !justify-center"
             style={{
               width: '70px',
               height: '70px',
@@ -53,7 +53,7 @@ function Review(props) {
         src={Stars}
         alt="stars"
       />
-      <p className={`!py-2 sm:!pb-12 ${style.review}`}>
+      <p className={`!py-2 !mb-4 sm:!pb-12 ${style.review}`}>
         {displayReview}
         {isLongReview && (
           <span

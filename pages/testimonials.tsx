@@ -211,14 +211,14 @@ export default function Testimonial({ feedback, lang, utm_source, utm_medium, ut
               language goals with our website. Join the community and start your
               own language learning journey today!
             </p>
-            <div className="flex overflow-x-auto whitespace-nowrap gap-4 !px-4 !py-4 lg:flex-wrap lg:justify-center">
+            <div className="flex overflow-x-auto whitespace-nowrap gap-4 !py-2 !m-4 lg:flex-wrap lg:justify-center">
   <button
     type="button"
     className={`${
       displayState.allLang
         ? 'text-white bg-[#4B2AAD]'
         : 'text-[#4B2AAD] bg-[#ECF2FF]'
-    } !px-6 !py-2 !rounded-full !border-0 !flex-shrink-0`}
+    } !px-6 !m-2 !py-2 !rounded-full !border-0 !flex-shrink-0`}
     style={{ width: "175px",cursor: "pointer" }}
     onClick={() => changeDisplay("allLang")}
   >
@@ -235,7 +235,7 @@ export default function Testimonial({ feedback, lang, utm_source, utm_medium, ut
           displayState[language]
             ? 'text-white bg-[#4B2AAD]'
             : 'text-[#4B2AAD] bg-[#ECF2FF]'
-        } !px-6 !py-2 !rounded-full !border-0 !flex-shrink-0 capitalize cursor-pointer`}
+        } !px-6 !py-2 !m-2 !rounded-full !border-0 !flex-shrink-0 capitalize cursor-pointer`}
         style={{ width: "160px" }}
         onClick={() => changeDisplay(language)}
       >

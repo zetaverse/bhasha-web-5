@@ -25,11 +25,12 @@ function LearnersReview(props) {
         ))}
       </Masonry>
 
-      <div className="!flex !flex-col sm:!hidden !gap-4 lg:!px-4">
+      <div className="!flex !flex-col sm:!hidden !gap-4 md:!px-4">
   {reviews
     .filter((_, idx) => idx < 4)
     .map((review) => (
-      <div className="!p-4 !justify-center" key={review.name}>
+      <div className='!flex-grow !flex-shrink-0 !basis-0 !py-4 !px-1'>
+      <div className=" !justify-center !px-4" key={review.name}>
         <Review
           imageURL={review.imageURL}
           name={review.name}
@@ -37,6 +38,7 @@ function LearnersReview(props) {
           review={review.review}
           language={language}
         />
+      </div>
       </div>
     ))}
 </div>

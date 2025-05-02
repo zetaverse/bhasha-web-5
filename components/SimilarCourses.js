@@ -97,7 +97,7 @@ function SimilarCourses(props) {
               <Image
                 src={eachCourse.imageURL}
                 className="img-fluid w-full"
-                layout="responsive"
+                // layout="responsive"
                 width={900}
                 height={300}
                 alt={`Online ${eachCourse.title} Program`}

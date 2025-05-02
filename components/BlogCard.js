@@ -57,7 +57,7 @@ export default function BlogCard({ blogURL, imageURL, blogsubCat, tags, blogCat,
           <div className={`${style.blogTitle} !p-2 ${inter.className}`} style={{ textAlign: 'left', fontWeight: 700 }}>
             <span>{blogTitle}</span>
           </div>
-          <div className={`!p-2 ${inter.className}`} style={{ color: 'black', fontSize: '0.875rem', textAlign: 'left' }}>
+          <div className={`!p-2 ${inter.className} !font-medium gap`} style={{ color: 'black', fontSize: '0.875rem', textAlign: 'left' }}>
             <span>{`${previewText.slice(0, 250)}${previewText.length > 250 ? "..." : ""}`}</span>
           </div>
           </Link>

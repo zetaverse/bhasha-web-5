@@ -119,7 +119,7 @@ export default function Language({ introduction, selectedLanguage, utm_source, u
             introduction={introduction.introduction}
             language={selectedLanguage}
           />
-          <FloatingButton modalTarget="#staticBackdrop"/>
+          <FloatingButton modalTarget="#staticBackdrop" language={selectedLanguage}/>
           {introduction.classExperience.isFinal && (
             <ClassExp classExperience={introduction.classExperience} />
           )}
@@ -158,6 +158,7 @@ export default function Language({ introduction, selectedLanguage, utm_source, u
           <CallBack
             text1={introduction.callbackTitle}
             modalId="staticBackdrop"
+            language={selectedLanguage}
           />
           <SimilarCourses
             otherCourses={introduction.otherCourses}
@@ -180,13 +181,19 @@ export default function Language({ introduction, selectedLanguage, utm_source, u
 }
 
 Language.getInitialProps = async ({ query }: { query: any }) => {
+  if (!query.slug || typeof query.slug !== 'string') {
+    return { introduction: null, selectedLanguage: null, utm_source: null, utm_medium: null, utm_campaign: null };
+  }
   const lang = query.slug.split("-");
   const { utm_source, utm_medium, utm_campaign } = query;
 
+  if (!lang[1]) {
+    return { introduction: null, selectedLanguage: null, utm_source, utm_medium, utm_campaign };
+  }
   const selectedLanguage = lang[1].toLowerCase();
   let introduction;
-  if (languages.includes(lang[1].toLowerCase())) {
-    introduction = await import(`../utilities/${lang[1].toLowerCase()}`);
+  if (languages.includes(selectedLanguage)) {
+    introduction = await import(`../utilities/${selectedLanguage}`);
   } else {
     introduction = null;
   }

@@ -98,7 +98,7 @@ export default function BlogTitleBlock(props) {
           }}
         >
           <Link
-            className={` ${isMobile ? '' : 'font-base/6'}`}
+            className={` ${isMobile ? '' : '!text-lg'}`}
             style={{
               color: '#4B2AAD',
               fontWeight: 500,
@@ -111,7 +111,7 @@ export default function BlogTitleBlock(props) {
           </Link>
           <Link
             href={`/resources/${subCategory.split(" ").join("").toLowerCase()}`}
-            className={` ${isMobile ? '' : 'font-base/6'}`}
+            className={` ${isMobile ? '' : '!text-lg'}`}
             style={{
               color: '#4B2AAD',
               fontWeight: 500,
@@ -121,7 +121,7 @@ export default function BlogTitleBlock(props) {
           >{` > ${subCategory}`}</Link>
           <Link
             href={`/resources/${subCategory.split(" ").join("").toLowerCase()}/${category.split(" ").join("").toLowerCase()}`}
-            className={` ${isMobile ? '' : 'font-base/6'}`}
+            className={` ${isMobile ? '' : '!text-lg'}`}
             style={{
               color: '#4B2AAD',
               fontWeight: 500,

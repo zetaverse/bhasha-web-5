@@ -4,7 +4,7 @@ import { useState } from 'react';
 import PopupFormCRM from './PopupFormCRM';
 
 function LearnerDesc(props) {
-  const { description, selectedLearner, imageURL, modalId } = props;
+  const { description, selectedLearner, imageURL, modalId, language } = props;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -58,7 +58,7 @@ function LearnerDesc(props) {
           </button>
         </div>
       </div>
-      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} />
+      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} language={language} />
     </div>
   );
 }

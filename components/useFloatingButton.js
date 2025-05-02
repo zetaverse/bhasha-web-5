@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import PopupFormCRM from './PopupFormCRM';
 
-const FloatingButton = ({modalTarget}) => {
+const FloatingButton = ({modalTarget, language}) => {
   const [isMobile, setIsMobile] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -46,7 +46,7 @@ const FloatingButton = ({modalTarget}) => {
       </span>
     </button>
       )}
-      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} />
+      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} language={language} />
     </>
     
   );
