@@ -12,13 +12,13 @@ import { useState, useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Resources({ subCategory, list, error }) {
+export default function Resources({ subCategory, list, error }: { subCategory: string, list: any, error: boolean }) {
   if (error) {
     return <Error />;
   }
 
   console.log(list)
-  let subtext1, subtext2, linktext, linkUrl, subtext3;
+  let subtext1, subtext2, linktext, linkUrl="", subtext3;
 
   if (subCategory === "Learning Guides") {
     subtext1 = "Our comprehensive Learning Guides aim to provide you with the tools, tips, and strategies you need to accelerate your language learning journey.";
@@ -39,11 +39,11 @@ export default function Resources({ subCategory, list, error }) {
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 9;
 
-  const onPageChange = (page) => {
+  const onPageChange = (page: number) => {
     setCurrentPage(page);
   };
 
-  const paginate = (items, pageNumber, pageSize) => {
+  const paginate = (items: any, pageNumber: number, pageSize: number) => {
     const startIndex = (pageNumber - 1) * pageSize;
     return items.slice(startIndex, startIndex + pageSize);
   };
@@ -120,7 +120,7 @@ export default function Resources({ subCategory, list, error }) {
           </div>
           <div className="!grid !gap-12" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
             {subCategory === "Learner Stories" ? (
-              list.map((item) => (
+              list.map((item: any) => (
                 <div key={item.fileName}>
                   <BlogCard
                     blogURL={item.fileName}
@@ -134,7 +134,7 @@ export default function Resources({ subCategory, list, error }) {
                 </div>
               ))
             ) : (
-              paginatedPosts.slice(0, isTablet ? 4 : 3).map((item) => ( 
+              paginatedPosts.slice(0, isTablet ? 4 : 3).map((item: any) => ( 
                 <div key={item.fileName}>
                   <BlogCard
                     blogURL={item.fileName}
@@ -164,11 +164,11 @@ export default function Resources({ subCategory, list, error }) {
   );
 }
 
-Resources.getInitialProps = async ({ query }) => {
+Resources.getInitialProps = async ({ query }: { query: any }) => {
   const resourceType = query.slug;
   let error = true;
-  let list = [];
-  let subCategory;
+  let list: any[] = [];
+  let subCategory: string;
 
   if (resourcetype.includes(resourceType)) {
     error = false;
@@ -182,5 +182,5 @@ Resources.getInitialProps = async ({ query }) => {
     }
   }
 
-  return { subCategory, list, error };
+  return { subCategory: "", list, error };
 };

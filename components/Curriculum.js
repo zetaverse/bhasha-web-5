@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { SlArrowDown } from 'react-icons/sl';
 import style from './Curriculum.module.scss';
 import PopupFormCRM from './PopupFormCRM';
@@ -10,6 +10,7 @@ function Curriculum(props) {
   const [openCourseId, setOpenCourseId] = useState(coursesDetails[0]?.courseID || null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeSyllabus, setActiveSyllabus] = useState(null);
+  const modalRef = useRef(null);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -20,6 +21,26 @@ function Curriculum(props) {
   const toggleAccordion = (id) => {
     setOpenCourseId((prevId) => (prevId === id ? null : id));
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+
+      const modalContainer = event.target.closest('.modal-container');
+      const modalContent = event.target.closest('.modal-content');
+    
+      if (modalContainer && !modalContent) {
+        closeSyllabus();
+      }
+    };
+
+    if (activeSyllabus) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [activeSyllabus]);
 
   return (
     <section
@@ -123,7 +144,7 @@ function Curriculum(props) {
         course.courseSyllabus && (
           <div
             key={course.courseSyllabus.id}
-            className={`transition-opacity duration-150 ease-linear fixed left-0 top-0 w-full h-full z-1055 ${
+            className={`modal-container transition-opacity duration-150 ease-linear fixed left-0 top-0 w-full h-full z-1055 ${
               activeSyllabus === course.courseSyllabus.id ? 'block' : 'hidden'
             }`}
             style={{      
@@ -135,7 +156,7 @@ function Curriculum(props) {
           >
             <div className="!pt-8 !pb-8 z-1055 w-full !rounded-lg bg-transparent transition-opacity duration-150 ease-linear">
               <div className="transition-transform duration-300 ease-out w-[95%] sm:w-[90%] md:w-[85%] lg:w-[800px] !mx-auto !bg-transparent !flex !justify-center !relative">
-                <div className="!relative !flex !flex-col !w-full bg-white !py-2 border border-[rgba(0,0,0,0.175)] rounded-md outline-none">
+                <div className="modal-content !relative !flex !flex-col !w-full bg-white !py-2 border border-[rgba(0,0,0,0.175)] rounded-md outline-none">
                   <Syllabus courseSyllabus={course.courseSyllabus} id={course.courseSyllabus.id} />
                   <div className="!flex !justify-center !pt-4 !pb-2 bg-white">
                     <button

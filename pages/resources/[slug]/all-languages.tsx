@@ -10,7 +10,7 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function AllLanguages({ subCategory, list, error }) {
+export default function AllLanguages({ subCategory, list, error }: { subCategory: string, list: any, error: boolean }) {
   if (error) {
     return <Error />;
   }
@@ -18,11 +18,11 @@ export default function AllLanguages({ subCategory, list, error }) {
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 9;
 
-  const onPageChange = (page) => {
+  const onPageChange = (page: number) => {
     setCurrentPage(page);
   };
 
-  const paginate = (items, pageNumber, pageSize) => {
+  const paginate = (items: any, pageNumber: number, pageSize: number) => {
     const startIndex = (pageNumber - 1) * pageSize;
     return items.slice(startIndex, startIndex + pageSize);
   };
@@ -59,7 +59,7 @@ export default function AllLanguages({ subCategory, list, error }) {
 
         <div className="!grid gap-12" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
           {paginatedPosts.length > 0 ? (
-            paginatedPosts.map((item) => (
+            paginatedPosts.map((item: any) => (
               <div key={item.fileName}>
                 <BlogCard
                   blogURL={item.fileName}
@@ -93,18 +93,18 @@ export default function AllLanguages({ subCategory, list, error }) {
   );
 }
 
-AllLanguages.getInitialProps = async ({ query }) => {
+AllLanguages.getInitialProps = async ({ query }: { query: any }) => {
   const { slug } = query; 
   let error = true;
-  let list = [];
-  let subCategory;
+  let list: any[] = [];
+  let subCategory: string;
 
   if (resourcetype.includes(slug)) {
     error = false;
 
     if (slug === "learnerstories") {
       subCategory = "Learner Stories";
-      list = articleList.filter(item => item.subCategory === subCategory);
+      list = articleList.filter((item: any) => item.subCategory === subCategory);
     }
     if (slug === "learningguides") {
       subCategory = "Learning Guides";
@@ -112,5 +112,5 @@ AllLanguages.getInitialProps = async ({ query }) => {
     }
   }
 
-  return { subCategory, list, error }; 
+  return {  subCategory: "", list, error }; 
 };

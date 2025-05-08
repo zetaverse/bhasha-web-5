@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "flowbite-react patch"
+    "lint": "next lint"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
@@ -15,8 +14,6 @@
     "@next/mdx": "^15.3.1",
     "@next/third-parties": "^15.3.1",
     "@types/mdx": "^2.0.13",
-    "flowbite": "^3.1.2",
-    "flowbite-react": "^0.11.7",
     "mdx": "^0.3.1",
     "next": "15.3.1",
     "next-mdx-remote": "^5.0.0",

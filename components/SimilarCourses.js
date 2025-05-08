@@ -42,7 +42,7 @@ function ButtonGroup({ next, previous, goToSlide, ...rest }) {
   } = rest;
   return (
     <div
-      className="absolute flex justify-between w-full"
+      className="!absolute !flex !justify-between !w-full"
       style={{ top: '50%', transform: 'translateY(-50%)' }}
     >
       <ButtonOne onClick={() => previous()} />
@@ -72,9 +72,9 @@ function SimilarCourses(props) {
   return (
     <section
       id="similar-Courses"
-      className="w-full !m-auto !mt-12 !py-12 sm:!px-12 bg-[#ECF2FF] min-h-[590px]"
+      className="!w-full !m-auto !mt-12 !py-12 sm:!px-12 bg-[#ECF2FF] !min-h-[590px]"
     >
-      <h3 className={`text-center !m-1 ${Styles.similarCourses}`}>{title}</h3>
+      <h3 className={`!text-center !m-1 ${Styles.similarCourses}`}>{title}</h3>
       <Carousel
         className="!m-1 sm:!m-12"
         responsive={responsive}
@@ -87,7 +87,7 @@ function SimilarCourses(props) {
         {otherCourses.map((eachCourse) => (
           <div
           //inner radius title spacer
-            className="bg-white rounded-md bg-clip-border break-words min-w-0 flex-col flex relative !mx-12 !mb-2 !border-0"
+            className="bg-white !rounded-md !bg-clip-border !break-words !min-w-0 !flex !flex-col !relative !mx-12 !mb-2 !border-0"
             style={{
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
@@ -104,16 +104,16 @@ function SimilarCourses(props) {
                 priority
               />
             </div>
-            <div className="bg-white grow shrink basis-auto text-center !p-0 !flex !flex-col"
+            <div className="bg-white !grow !shrink !basis-auto !text-center !p-0 !flex !flex-col"
             style={{
                   boxShadow: "0px 4px 20px 0px rgba(0, 0, 0, 0.1)"
             }}>
-              <h3 className="text-xl/7.5 !mt-4 !mb-2"
+              <h3 className="!text-xl !mt-4 !mb-2"
                 style={{ lineHeight: '22px' }}>{`Online ${eachCourse.title} Course`}</h3>
               <p className="text-base font-white !mb-4">Learn Anytime, Anywhere</p>
               <Link
                 href={`/online-${eachCourse.title.toLowerCase()}-classes`}
-                className="text-white bg-body-[#4B2AAD] bg-[#4B2AAD] !p-2 !rounded-full !border-0 !mx-auto !mb-6"
+                className="text-white !font-medium !bg-body-[#4B2AAD] bg-[#4B2AAD] !p-2 !rounded-full !border-0 !mx-auto !mb-6 !text-lg"
                 style={{ width: '180px',
                   textDecoration: 'none',
                   boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)"

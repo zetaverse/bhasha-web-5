@@ -1,5 +1,4 @@
 const withMDX = require('@next/mdx')()
-const withFlowbiteReact = require("flowbite-react/plugin/nextjs");
  
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -18,6 +17,21 @@ const nextConfig = {
   //     },
   //   ],
   // },
+  async redirects() {
+    return [
+      {
+        source: '/blog/beginner-guide-how-to-learn-kannada-through-english',
+        destination: '/blog/learn-kannada-through-english',
+        permanent: true, // this is what makes it a 301 redirect
+      },
+      // You can add more redirects as needed:
+    //   {
+    //     source: '/old-blog/:slug',
+    //     destination: '/blog/:slug',
+    //     permanent: true,
+    //   }
+    ]
+  },
 }
  
-module.exports = withFlowbiteReact(withMDX(nextConfig))
+module.exports = withMDX(nextConfig)

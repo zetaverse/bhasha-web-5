@@ -66,7 +66,7 @@ function LearnerType(props) {
             selectedLearner={selectedLearner}
             imageURL={imgURL}
             modalId={modalId}
-            key={language}
+            language={language}
           />
         </div>
       </div>

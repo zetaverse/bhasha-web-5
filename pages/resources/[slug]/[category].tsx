@@ -11,7 +11,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 
-export default function Resources({ subCategory, category, list, error }) {
+export default function Resources({ subCategory, category, list, error }: { subCategory: string, category: string, list: any, error: boolean }) {
   if (error) {
     return <Error />;
   }
@@ -19,11 +19,11 @@ export default function Resources({ subCategory, category, list, error }) {
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 9;
 
-  const onPageChange = (page) => {
+  const onPageChange = (page: number) => {
     setCurrentPage(page);
   };
 
-  const paginate = (items, pageNumber, pageSize) => {
+  const paginate = (items: any, pageNumber: number, pageSize: number) => {
     const startIndex = (pageNumber - 1) * pageSize;
     return items.slice(startIndex, startIndex + pageSize);
   };
@@ -61,7 +61,7 @@ export default function Resources({ subCategory, category, list, error }) {
 
         <div className="!grid !gap-12" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
           {paginatedPosts.length > 0 ? (
-            paginatedPosts.map((item) => (
+            paginatedPosts.map((item: any) => (
               <div key={item.fileName}>
                 <BlogCard
                   blogURL={item.fileName}
@@ -95,10 +95,10 @@ export default function Resources({ subCategory, category, list, error }) {
   );
 }
 
-Resources.getInitialProps = async ({ query }) => {
+Resources.getInitialProps = async ({ query }: { query: any }) => {
   const { slug, category } = query; 
   let error = true;
-  let list = [];
+  let list: any[] = [];
   let subCategory;
 
   const Category = category.toLowerCase().replace(/\s+/g, '');

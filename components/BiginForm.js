@@ -15,10 +15,26 @@ export default function BiginForm(props) {
       'BiginWebToRecordForm471816000001556773'
     );
     const z = document.createElement('script');
-    z.innerHTML =
-      'var formname = document.BiginWebToRecordForm; if(!formname){ formname = document.BiginWebToRecordForm471816000001556773 } if(!formname){ formname = document.BiginWebToContactForm471816000001556773 } if(!formname){ formname = document.WebToContacts471816000001556773 } formname.action = "https://bigin.zoho.in/crm/WebForm";formname.className = formname.className + " wf-form-paid";function validateForm() {  return validateForm471816000001556773();  }function validateForm471816000001556773() {  if((typeof checkMandatory !== "undefined" && checkMandatory()) || (typeof checkMandatory471816000001556773 !== "undefined" && checkMandatory471816000001556773())) {var formname = document.BiginWebToRecordForm; if(!formname){ formname = document.BiginWebToRecordForm471816000001556773 }  formname.submit();  }else{  event.preventDefault();  return false;  }  }';
+    z.innerHTML = `
+      function validateForm() {
+        return validateForm471816000001556773();
+      }
+      function validateForm471816000001556773() {
+        if((typeof checkMandatory !== "undefined" && checkMandatory()) || (typeof checkMandatory471816000001556773 !== "undefined" && checkMandatory471816000001556773())) {
+          var formname = document.getElementById('BiginWebToRecordForm471816000001556773');
+          if(formname) {
+            formname.action = "https://bigin.zoho.in/crm/WebForm";
+            formname.className = formname.className + " wf-form-paid";
+            formname.submit();
+          }
+        } else {
+          event.preventDefault();
+          return false;
+        }
+      }
+    `;
     formScript.appendChild(z);
-  });
+  }, [language]);
 
   return (
     <>
@@ -64,7 +80,7 @@ onSubmit={()=> validateForm471816000001556773()} acceptCharset='UTF-8'>
             display: 'flex',
             flexDirection: 'column',
           }}>
-  <div className={language ? 'bgn-wf-row' : 'bgn-wf-row pt-4'}>  
+  <div className={language ? 'bgn-wf-row' : 'bgn-wf-row !pt-4'}>  
   <div className='wf-label' style={{ display: 'none' }}>Name</div>
   <div className='wf-field wf-field-mandatory'>
   <div className='wf-field-inner'>

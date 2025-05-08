@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { languages, resourceCenter } from "../utilities/utilities";
 import style from "./Navbar.module.css";
-import "flowbite";
 
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -74,7 +73,12 @@ export default function Navbar() {
           </li>
 
           <li className="group relative">
-            <span className="cursor-pointer hover:text-[#4b2AAD]">Courses</span>
+            <span className="cursor-pointer hover:text-[#4b2AAD] flex items-center">
+              Courses
+              <svg className="w-2.5 h-2.5 !ml-2" viewBox="0 0 10 6" fill="none">
+                <path d="m1 1 4 4 4-4" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+              </svg>
+            </span>
             <ul className="absolute hidden group-hover:block bg-[#f3f5f7] shadow-lg rounded-md !pt-2 !py-2 min-w-[180px]">
               {languages.map((lang) => (
                 <li key={lang}>
@@ -99,7 +103,12 @@ export default function Navbar() {
           </li>
 
           <li className="group relative">
-            <Link href="/resources" className="hover:text-[#4b2AAD]">Resources</Link>
+            <Link href="/resources" className="hover:text-[#4b2AAD] flex items-center">
+              Resources
+              <svg className="w-2.5 h-2.5 !ml-2" viewBox="0 0 10 6" fill="none">
+                <path d="m1 1 4 4 4-4" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+              </svg>
+            </Link>
             <ul className="absolute hidden group-hover:block bg-[#f3f5f7] shadow-lg rounded-md !pt-2 !py-2 min-w-[180px]">
               {resourceCenter.map((res) => {
                 const url = res.split(" ").join("").toLowerCase();
