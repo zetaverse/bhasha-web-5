@@ -97,7 +97,7 @@ AllLanguages.getInitialProps = async ({ query }: { query: any }) => {
   const { slug } = query; 
   let error = true;
   let list: any[] = [];
-  let subCategory: string;
+  let subCategory: string = "";
 
   if (resourcetype.includes(slug)) {
     error = false;
@@ -112,5 +112,5 @@ AllLanguages.getInitialProps = async ({ query }: { query: any }) => {
     }
   }
 
-  return {  subCategory: "", list, error }; 
+  return {  subCategory, list, error }; 
 };

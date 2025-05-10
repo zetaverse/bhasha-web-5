@@ -168,7 +168,7 @@ Resources.getInitialProps = async ({ query }: { query: any }) => {
   const resourceType = query.slug;
   let error = true;
   let list: any[] = [];
-  let subCategory: string;
+  let subCategory: string = "";
 
   if (resourcetype.includes(resourceType)) {
     error = false;
@@ -182,5 +182,5 @@ Resources.getInitialProps = async ({ query }: { query: any }) => {
     }
   }
 
-  return { subCategory: "", list, error };
+  return { subCategory, list, error };
 };

@@ -160,7 +160,7 @@ onSubmit={()=> validateForm471816000001556773()} acceptCharset='UTF-8'>
   </div>
   </div>
   </div>
-  <div className='wf-row !pb-4' style={language? {display:'none'}: {}}>  
+  <div className='wf-row' style={language? {display:'none'}: {}}>  
   <div className='wf-label' style={{ display: 'none' }}>Language</div>
   <div className='wf-field wf-field-mandatory'>
   <div className='wf-field-inner'>
@@ -236,7 +236,7 @@ onSubmit={()=> validateForm471816000001556773()} acceptCharset='UTF-8'>
   </div>
   </div>
   </div>
-  <div className='wf-row wf-btn-row'>
+  <div className='wf-row wf-btn-row !pt-4'>
   <div className='wf-label' data-ux-empty-label='true'></div>
   <div className='wform-btn-wrap'>
   <button
