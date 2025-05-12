@@ -1,14 +1,12 @@
 import Image from 'next/image';
 import style from './LearnerDesc.module.scss';
-import { useState } from 'react';
-import PopupFormCRM from './PopupFormCRM';
 
 function LearnerDesc(props) {
-  const { description, selectedLearner, imageURL, modalId, language } = props;
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { description, selectedLearner, imageURL, modalId, language, isFormVisible, setIsFormVisible } = props;
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const openForm = () => {
+    setIsFormVisible(true);
+  };
 
   return (
     <div className="flex flex-wrap -!mx-3 !px-6 !h-full">
@@ -50,7 +48,7 @@ function LearnerDesc(props) {
             style={{textDecoration:"none",
               boxShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)"
             }}
-            onClick={openModal}
+            onClick={openForm}
           >
             <span style={{ fontWeight: '500', fontSize: '18px' }}>
               Enquire Now
@@ -58,7 +56,6 @@ function LearnerDesc(props) {
           </button>
         </div>
       </div>
-      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} language={language} />
     </div>
   );
 }

@@ -1,18 +1,9 @@
 import Image from 'next/image';
-import PopupFormCRM from './PopupFormCRM';
 import { useState, useEffect } from 'react';
-// import HomeModal from './HomeModal';
 
 function Introduction(props) {
   const { heading, headingTxt, features, imageURL } = props.introduction;
-  const { language } = props;
-  const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
-
-  // Function to open the modal
-  const openModal = () => setIsModalOpen(true);
-
-  // Function to close the modal
-  const closeModal = () => setIsModalOpen(false);
+  const { isFormVisible, setIsFormVisible } = props;
 
   const [windowWidth, setWindowWidth] = useState();
 
@@ -61,6 +52,10 @@ function Introduction(props) {
       document.head.removeChild(style);
     };
   }, []);
+
+  const toggleFormVisibility = () => {
+    setIsFormVisible(!isFormVisible);
+  };
 
   return (
     <div id="introduction" className="lg:max-w-[88%] !w-full lg:!mx-auto !px-3 !my-4 lg:!my-12 lg:!pt-2">
@@ -120,7 +115,7 @@ function Introduction(props) {
                   textDecoration: 'none',
                   boxShadow: '0 4px 4px rgba(0, 0, 0, 0.25)',
                 }}
-                onClick={openModal}
+                onClick={toggleFormVisibility}
               >
                 
                 <span style={{ fontWeight: '500', fontSize: '20px' }}>Enquire Now</span>
@@ -147,8 +142,8 @@ function Introduction(props) {
               className="image"
               height={800}
               width={800}
-              layout="responsive"  // Ensure the image fills the container
-              objectFit="contain"  // Optionally, use 'cover' to crop if needed
+              layout="responsive"
+              objectFit="contain"
               sizes="(min-width: 990px) 50vw, 100vw"
               src={imageURL}
               quality={50}
@@ -157,9 +152,7 @@ function Introduction(props) {
           </div>
         </div>
       </div>
-      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} language={language} />
     </div>
-    
   );
 }
 

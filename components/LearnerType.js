@@ -1,17 +1,12 @@
 import { useState } from 'react';
 import LearnerDesc from './LearnerDesc';
 import Style from './LearnerType.module.scss';
-import PopupFormCRM from './PopupFormCRM';
 
 function LearnerType(props) {
-  const { learnerType, modalId, language, learnerTitle } = props;
+  const { learnerType, modalId, language, learnerTitle, setIsFormVisible } = props;
   const [selectedLearner, setSelectedLearner] = useState(learnerType[0].name);
   const [description, setDescription] = useState(learnerType[0].description);
   const [imgURL, setImgURL] = useState(learnerType[0].imageURL);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
 
   const handleClick = (e) => {
     const learner = e.target.value;
@@ -20,6 +15,11 @@ function LearnerType(props) {
     setSelectedLearner(type.name);
     setImgURL(type.imageURL);
   };
+
+  const openForm = () => {
+    setIsFormVisible(true);
+  };
+
   return (
     <section id="learnerType" className="max-w-15/16 w-full !my-12 lg:!my-0 !mx-auto lg:!p-2">
       <h2 className={`text-center ${Style.learnerTypeHeading} !mb-2 text-[#1A1715]`}>
@@ -67,6 +67,7 @@ function LearnerType(props) {
             imageURL={imgURL}
             modalId={modalId}
             language={language}
+            setIsFormVisible={setIsFormVisible}
           />
         </div>
       </div>
@@ -101,7 +102,7 @@ function LearnerType(props) {
               style={{textDecoration:"none",
                 boxShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)"
               }}
-              onClick={openModal}
+              onClick={openForm}
             >
               <span style={{ fontWeight: '500', fontSize: '16px' }}>
                 Enquire Now
@@ -110,7 +111,6 @@ function LearnerType(props) {
           </div>
         </div>
       </div>
-      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} language={language} />
     </section>
   );
 }

@@ -3,7 +3,7 @@ import { MdClose } from "react-icons/md";
 
 export default function HomeModal(props) {
   const { isModalOpen, closeModal, UTMSource, UTMMedium, UTMCampaign } = props;
-
+  isModalOpen ? (console.log("form dispayed")): console.log("invisible")
   return (
     <div
       className={`fixed left-0 top-0 w-full h-full z-1055 ${

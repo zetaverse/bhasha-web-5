@@ -1,22 +1,18 @@
 import { useState, useEffect } from "react";
-import PopupFormCRM from './PopupFormCRM';
 
-const FloatingButton = ({modalTarget, language}) => {
+const FloatingButton = ({ modalTarget, language, isFormVisible, setIsFormVisible }) => {
   const [isMobile, setIsMobile] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Function to open the modal
-  const openModal = () => setIsModalOpen(true);
-
-  // Function to close the modal
-  const closeModal = () => setIsModalOpen(false);
+  const openForm = () => {
+    setIsFormVisible(true);
+  };
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
-    handleResize(); // Initial check on component mount
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -30,7 +26,7 @@ const FloatingButton = ({modalTarget, language}) => {
     <button
       type="button"
       className="text-white !p-4 !px-4 !rounded-full !shadow-sm !border-0 !w-1/2 md:!me-12"
-      onClick={openModal}
+      onClick={openForm}
       style={{
         position: 'fixed',
         bottom: '10px',
@@ -46,7 +42,6 @@ const FloatingButton = ({modalTarget, language}) => {
       </span>
     </button>
       )}
-      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} language={language} />
     </>
     
   );

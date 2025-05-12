@@ -1,25 +1,23 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { SlArrowDown } from 'react-icons/sl';
 import style from './Curriculum.module.scss';
-import PopupFormCRM from './PopupFormCRM';
 import Syllabus from './syllabus';
 
 function Curriculum(props) {
   const { details, coursesDetails, showSyllabus } = props.curriculumDetail;
-  const { modalId, curriculumHeadline, language } = props;
+  const { modalId, curriculumHeadline, setIsFormVisible } = props;
   const [openCourseId, setOpenCourseId] = useState(coursesDetails[0]?.courseID || null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeSyllabus, setActiveSyllabus] = useState(null);
-  const modalRef = useRef(null);
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
   
   const openSyllabus = (syllabusId) => setActiveSyllabus(syllabusId);
   const closeSyllabus = () => setActiveSyllabus(null);
 
   const toggleAccordion = (id) => {
     setOpenCourseId((prevId) => (prevId === id ? null : id));
+  };
+
+  const openForm = () => {
+    setIsFormVisible(true);
   };
 
   useEffect(() => {
@@ -112,7 +110,7 @@ function Curriculum(props) {
                       textDecoration: 'none',
                       boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.25)',
                     }}
-                    onClick={openModal}
+                    onClick={openForm}
                   >
                     <span className={`${style.courseButton} lg:!px-6`}>Enquire Now</span>
                   </button>
@@ -138,7 +136,6 @@ function Curriculum(props) {
           </div>
         ))}
       </div>
-      <PopupFormCRM isModalOpen={isModalOpen} closeModal={closeModal} language={language} />
       
       {coursesDetails.map((course) => (
         course.courseSyllabus && (

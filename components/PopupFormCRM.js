@@ -3,6 +3,7 @@ import { MdClose } from "react-icons/md";
 
 export default function PopupFormCRM(props) {
   const { language, UTMSource, UTMMedium, UTMCampaign, isModalOpen, closeModal } = props;
+
   return (
     <div
       className={`transition-opacity duration-150 ease-linear fixed left-0 top-0 w-full h-full z-1055 ${
@@ -17,8 +18,7 @@ export default function PopupFormCRM(props) {
       aria-labelledby="staticBackdropLabel"
       aria-hidden={!isModalOpen}
     >
-      <div
-        className="!mt-4 sm:!w-[300px] lg:!w-[598px] !mx-auto !bg-transparent !flex !min-h-[calc(100%-3.5rem)] !items-center !relative !m-0 sm:!m-auto">
+      <div className="!mt-4 sm:!w-[300px] lg:!w-[598px] !mx-auto !bg-transparent !flex !min-h-[calc(100%-3.5rem)] !items-center !relative !m-0 sm:!m-auto">
         <div className="!relative !flex !flex-col !w-full bg-[#f3f5f7] border border-[rgba(0,0,0,0.175)] rounded-md outline-none">
           <div className="!px-6 !py-4 !flex !justify-between !items-center flex-shrink-0 border-0">
             <button

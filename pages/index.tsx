@@ -1,6 +1,6 @@
 // "use client"
 
-import { useEffect, useContext } from "react";
+import { useEffect, useContext, useState } from "react";
 import Script from "next/script";
 import { UTMContext } from "../Context/UTMContext";
 import MetaManager from "../components/MetaManager";
@@ -56,6 +56,7 @@ const FAQ = dynamic(() => import('../components/FAQ'), {
 
 export default function Home({utm_source, utm_medium, utm_campaign}: {utm_source: string, utm_medium: string, utm_campaign: string}) {
   const {UTMSource, UTMMedium, UTMCampaign, setUTMSource, setUTMMedium, setUTMCampaign} = useContext(UTMContext);
+  const [isFormVisible, setIsFormVisible] = useState(false);
   useEffect(()=>{
     if(utm_source || utm_medium || utm_campaign){
       setUTMSource(()=>utm_source)
@@ -80,7 +81,9 @@ export default function Home({utm_source, utm_medium, utm_campaign}: {utm_source
       <div className="allContent">
         <Navbar />
         <div className="overflow-hidden">
-          <HomeIntroduction introduction={introduction} />
+          <HomeIntroduction introduction={introduction} 
+            isFormVisible={isFormVisible}
+            setIsFormVisible={setIsFormVisible} />
           <SimilarCourses otherCourses={otherCourses} title="Our courses" />
           <ClassExp classExperience={classExperience} />
           <TestimonialInsert1 testimonial1={testimonial1} />
@@ -90,11 +93,24 @@ export default function Home({utm_source, utm_medium, utm_campaign}: {utm_source
             testimonialTitle={testimonialTitle}
           />
           <FAQ faqs={faqs} />
-          <CallBack text1={callbackTitle} modalId="HomeModal" />
+          <CallBack
+            text1={callbackTitle}
+            modalId="HomeModal"
+            isFormVisible={isFormVisible}
+            setIsFormVisible={setIsFormVisible}
+          />
         </div>
       </div>
       <div className="modalContent">
-        <HomeModal UTMSource={UTMSource} UTMMedium={UTMMedium} UTMCampaign={UTMCampaign} />
+        {isFormVisible && (
+          <HomeModal
+            UTMSource={UTMSource}
+            UTMMedium={UTMMedium}
+            UTMCampaign={UTMCampaign}
+            isModalOpen={isFormVisible}
+            closeModal={() => setIsFormVisible(false)}
+          />
+        )}
           {/* {curriculumDetail.coursesDetails.map((eachDetail) => (
             <Syllabus
               courseSyllabus={eachDetail.courseSyllabus}

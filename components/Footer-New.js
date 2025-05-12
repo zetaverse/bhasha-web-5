@@ -31,7 +31,7 @@ export default function FooterNew() {
             {languages.map((language) => (
               <Link
                 href={`/online-${language}-classes/`}
-                className="!px-1 !py-2 font-normal text-base/6"
+                className="!px-1 !py-2 font-normal text-base/6 hover:!underline hover:!font-black"
                 style={{textDecoration:"none",lineHeight:"32px",color:"#5C5856"}}
                 target="blank"
                 key={language}
@@ -45,7 +45,7 @@ export default function FooterNew() {
             {quickLinks.map((quickLink) => (
               <Link
                 href={quickLink.url}
-                className="!px-1 !py-2 font-normal text-base/6"
+                className="!px-1 !py-2 font-normal text-base/6 hover:!underline hover:!font-black"
                 style={{textDecoration:"none",lineHeight:"32px",color:"#5C5856"}}
                 key={quickLink.name}
               >
@@ -55,24 +55,24 @@ export default function FooterNew() {
           </div>
           <div className="!flex !flex-col !justify-start !px-4">
             <h3 className="!ps-1 !pe-12 !me-6 !py-2">Contact us</h3>            
-            <Link className="!px-1 !py-2 font-normal text-base/6"
+            <Link className="!px-1 !py-2 font-normal text-base/6 hover:!underline hover:!font-black"
             style={{textDecoration:"none",lineHeight:"32px",color:"#5C5856"}}
              href="tel:+91-6366936953">
               +91-6366936953
             </Link>
-            <Link className="!px-1 !py-2 font-normal text-base/6"
+            <Link className="!px-1 !py-2 font-normal text-base/6 hover:!underline hover:!font-black"
             style={{textDecoration:"none",lineHeight:"32px",color:"#5C5856"}}
             href="tel:+91-6366936559">
               +91-6366936559
             </Link>
-            <Link className="!px-1 !py-2 font-normal text-base/6"
+            <Link className="!px-1 !py-2 font-normal text-base/6 hover:!underline hover:!font-black"
             style={{textDecoration:"none",lineHeight:"32px",color:"#5C5856"}}
               href="mailto:hello@bhasha.io"
             >
               hello@bhasha.io
             </Link>
             <Link
-              className="!px-1 !py-2 font-normal text-base/6"
+              className="!px-1 !py-2 font-normal text-base/6 hover:!underline hover:!font-black"
               style={{textDecoration:"none",lineHeight:"32px",color:"#5C5856"}}
               href="mailto:ops@bhasha.io"
             >
@@ -84,17 +84,17 @@ export default function FooterNew() {
           {/* <h3 className="ps-1 pe-4 py-2">Connect with us</h3> */}
             <Link
               href="https://www.facebook.com/bhashaApp/"
-              className="!px-4 !py-2 footerNewLink"
+              className="!px-4 !py-2 footerNewLink hover:!underline hover:!font-black"
               key="Facebook"
               target="blank"
             >
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
               <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-            </svg>
+            </svg>  
             </Link>
             <Link
               href="https://instagram.com/bhasha.io?utm_medium=copy_link"
-              className="!px-4 !py-2 footerNewLink"
+              className="!px-4 !py-2 footerNewLink hover:!underline hover:!font-black"
               key="Instagram"
               target="blank"
             >
@@ -104,7 +104,7 @@ export default function FooterNew() {
             </Link>
             <Link
               href="https://www.linkedin.com/company/bhasha-io"
-              className="!px-4 !py-2 footerNewLink"
+              className="!px-4 !py-2 footerNewLink hover:!underline hover:!font-black"
               key="LinkedIn"
               target="blank"
             >
@@ -114,7 +114,7 @@ export default function FooterNew() {
             </Link>
             <Link
               href="https://www.youtube.com/channel/UCn4FevDRUbLVcmDrSinJ_eg"
-              className="!px-4 !py-2 footerNewLink"
+              className="!px-4 !py-2 footerNewLink hover:!underline hover:!font-black"
               key="Youtube"
               target="blank"
             >
@@ -175,7 +175,7 @@ export default function FooterNew() {
             href={`/online-${language}-classes`}
             className={
               dropdownState.drop1
-                ? '!px-12 !py-1 !flex !flex-col '
+                ? '!px-12 !py-1 !flex !flex-col hover:!underline hover:!font-black'
                 : 'hidden'
             }
             style={{textDecoration:"none"}}
@@ -240,7 +240,7 @@ export default function FooterNew() {
             href={quickLink.url}
             className={
               dropdownState.drop2
-                ? '!px-12 !py-1 !flex !flex-col'
+                ? '!px-12 !py-1 !flex !flex-col hover:!underline hover:!font-black'
                 : 'hidden'
             }
             style={{textDecoration:"none"}}
@@ -298,7 +298,7 @@ export default function FooterNew() {
           href="https://www.facebook.com/bhashaApp/"
           className={
             dropdownState.drop3
-              ? '!px-12 !py-1 !flex !flex-col'
+              ? '!px-12 !py-1 !flex !flex-col hover:!underline hover:!font-black'
               : 'hidden'
           }
           style={{textDecoration:"none"}}
@@ -320,7 +320,7 @@ export default function FooterNew() {
           href="https://instagram.com/bhasha.io?utm_medium=copy_link"
           className={
             dropdownState.drop3
-              ? '!px-12 !py-1 !flex !flex-col'
+              ? '!px-12 !py-1 !flex !flex-col hover:!underline hover:!font-black'
               : 'hidden'
           }
           style={{textDecoration:"none"}}
@@ -342,7 +342,7 @@ export default function FooterNew() {
           href="https://www.linkedin.com/company/bhasha-io"
           className={
             dropdownState.drop3
-              ? '!px-12 !py-1 !flex !flex-col'
+              ? '!px-12 !py-1 !flex !flex-col hover:!underline hover:!font-black'
               : 'hidden'
           }
           style={{textDecoration:"none"}}
@@ -364,7 +364,7 @@ export default function FooterNew() {
           href="https://www.youtube.com/channel/UCn4FevDRUbLVcmDrSinJ_eg"
           className={
             dropdownState.drop3
-              ? '!px-12 !py-1 !flex !flex-col'
+              ? '!px-12 !py-1 !flex !flex-col hover:!underline hover:!font-black'
               : 'hidden'
           }
           style={{textDecoration:"none"}}
@@ -432,7 +432,7 @@ export default function FooterNew() {
           >
             Contact us:
             <Link
-              className="!py-1"
+              className="!py-1 hover:!underline hover:!font-black"
               href="tel:+91-6366936952"
               style={{ fontWeight: '400', fontSize: '12px', color: '#5C5856',textDecoration:"none" }}
             >
@@ -444,7 +444,7 @@ export default function FooterNew() {
             >
               Email Us:
               <Link
-                className=" !py-1"
+                className=" !py-1 hover:!underline hover:!font-black"
                 href="mailto:hello@bhasha.io"
                 style={{
                   fontWeight: '400',
@@ -456,7 +456,7 @@ export default function FooterNew() {
                 hello@bhasha.io
               </Link>
               <Link
-                className=" !py-1"
+                className=" !py-1 hover:!underline hover:!font-black"
                 href="mailto:ops@bhasha.io"
                 style={{
                   fontWeight: '400',
@@ -474,7 +474,7 @@ export default function FooterNew() {
             >
               Website:
               <Link
-                className=" !py-1"
+                className=" !py-1 hover:!underline hover:!font-black"
                 href="/"
                 style={{
                   fontWeight: '400',

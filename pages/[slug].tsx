@@ -1,5 +1,5 @@
 // import Head from 'next/head';
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import Script from "next/script";
 import { UTMContext } from "../Context/UTMContext";
 import dynamic from "next/dynamic";
@@ -69,6 +69,7 @@ export default function Language({ introduction, selectedLanguage, utm_source, u
     return <Error />;
   }
   const {UTMSource, UTMMedium, UTMCampaign, setUTMSource, setUTMMedium, setUTMCampaign} = useContext(UTMContext);
+  const [isFormVisible, setIsFormVisible] = useState(false);
   useEffect(()=>{
     if(utm_source || utm_medium || utm_campaign){
       setUTMSource(utm_source)
@@ -118,8 +119,10 @@ export default function Language({ introduction, selectedLanguage, utm_source, u
           <Introduction
             introduction={introduction.introduction}
             language={selectedLanguage}
+            isFormVisible={isFormVisible}
+            setIsFormVisible={setIsFormVisible}
           />
-          <FloatingButton modalTarget="#staticBackdrop" language={selectedLanguage}/>
+          <FloatingButton modalTarget="#staticBackdrop" language={selectedLanguage} isFormVisible={isFormVisible} setIsFormVisible={setIsFormVisible} />
           {introduction.classExperience.isFinal && (
             <ClassExp classExperience={introduction.classExperience} />
           )}
@@ -129,6 +132,8 @@ export default function Language({ introduction, selectedLanguage, utm_source, u
             curriculumHeadline={introduction.curriculumHeadline}
             modalId="staticBackdrop"
             language={selectedLanguage}
+            isFormVisible={isFormVisible}
+            setIsFormVisible={setIsFormVisible}
           />
           {introduction.testimonial1.isFinal && (
             <TestimonialInsert1 testimonial1={introduction.testimonial1} />
@@ -145,6 +150,8 @@ export default function Language({ introduction, selectedLanguage, utm_source, u
             learnerTitle={introduction.learnerTitle}
             learnerType={introduction.learnerType}
             modalId="staticBackdrop"
+            isFormVisible={isFormVisible}
+            setIsFormVisible={setIsFormVisible}
           />
           {introduction.isTestimonialFinal && selectedLanguage !== 'gujarati' && selectedLanguage !== 'punjabi' && (
             <LearnersReview
@@ -159,6 +166,8 @@ export default function Language({ introduction, selectedLanguage, utm_source, u
             text1={introduction.callbackTitle}
             modalId="staticBackdrop"
             language={selectedLanguage}
+            isFormVisible={isFormVisible}
+            setIsFormVisible={setIsFormVisible}
           />
           <SimilarCourses
             otherCourses={introduction.otherCourses}
@@ -167,7 +176,16 @@ export default function Language({ introduction, selectedLanguage, utm_source, u
         </div>
       </div>
       <div className="modalContent">
-        <PopupFormCRM language={selectedLanguage} UTMSource={UTMSource} UTMMedium={UTMMedium} UTMCampaign={UTMCampaign} />
+        {isFormVisible && (
+            <PopupFormCRM
+              language={selectedLanguage}
+              UTMSource={UTMSource}
+              UTMMedium={UTMMedium}
+              UTMCampaign={UTMCampaign}
+              isModalOpen={isFormVisible}
+              closeModal={() => setIsFormVisible(false)}
+            />
+          )}
         {/* {introduction.curriculumDetail.coursesDetails.map((eachDetail: any) => (
           <Syllabus
             key={eachDetail.courseSyllabus.id}

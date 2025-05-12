@@ -103,7 +103,7 @@ export default function Resources({ subCategory, list, error }: { subCategory: s
         <h1 className={`font-semibold text-start text-nowrap ${inter.className}`} style={{ margin: "0", padding: "0", width: "36%" }}>{subCategory}</h1>
         <p className={`font-normal text-base/6 text-start ${inter.className} !my-6`} style={{ width: "100%" }}>{subtext1}</p>
         <p className={`font-normal text-base/6 text-start ${inter.className} !my-6`} style={{ width: "100%" }}>
-          {subtext2} <Link href={linkUrl} style={{textDecoration:"none"}}>{linktext}</Link> {subtext3}
+          {subtext2} <Link href={linkUrl} style={{textDecoration:"none", color:"#4B2AAD"}}>{linktext}</Link> {subtext3}
         </p>
         {subCategory === "Learning Guides" ? (<LearningGuide cardCount={languages.length} showViewAll={false} />) : null}
 

@@ -1,16 +1,14 @@
 import Image from 'next/image';
 import homeBanner from '../public/Images/banners/homeBanner.webp';
-import { useState } from 'react';
-import HomeModal from './HomeModal';
+
 function HomeIntroduction(props) {
   const { heading, features, imageURL } = props.introduction;
-  const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
+  const { isFormVisible, setIsFormVisible } = props;
 
-  // Function to open the modal
-  const openModal = () => setIsModalOpen(true);
-
-  // Function to close the modal
-  const closeModal = () => setIsModalOpen(false);
+  const toggleFormVisibility = () => {
+    console.log('Enquire Now button clicked. Current isFormVisible:', isFormVisible);
+    setIsFormVisible(!isFormVisible);
+  };
 
   return (
     <div id="homeIntroduction" className="lg:max-w-[88%]  !my-4 lg:!pt-12 w-full lg:!px-4 lg:!mx-auto">
@@ -54,7 +52,7 @@ function HomeIntroduction(props) {
                   textDecoration: 'none',
                   boxShadow: '0 4px 4px rgba(0, 0, 0, 0.25)',
                 }}
-                onClick={openModal} // Open modal when button is clicked
+                onClick={toggleFormVisibility}
               >
                 <span style={{ fontWeight: '500', fontSize: '20px' }}>Enquire Now</span>
               </button>
@@ -87,8 +85,6 @@ function HomeIntroduction(props) {
           </div>
         </div>
       </div>
-
-      <HomeModal isModalOpen={isModalOpen} closeModal={closeModal} />
     </div>
   );
 }
