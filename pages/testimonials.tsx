@@ -118,6 +118,7 @@ export default function Testimonial({ feedback, lang, utm_source, utm_medium, ut
   const {UTMSource, UTMMedium, UTMCampaign, setUTMSource, setUTMMedium, setUTMCampaign} = useContext(UTMContext);
 
   const [displayState, setDisplayState] = useState<any>(InitialState);
+  const [isFormVisible, setIsFormVisible] = useState(false);
 
   let shuffledReviews = [];
 
@@ -332,12 +333,20 @@ export default function Testimonial({ feedback, lang, utm_source, utm_medium, ut
                 </>
               );
             })}
-            <CallBack text1="Have questions for us?" modalId="HomeModal" />
+            <CallBack text1="Have questions for us?" modalId="HomeModal" isFormVisible={isFormVisible} setIsFormVisible={setIsFormVisible} />
           </section>
         </div>
       </div>
       <div className="modalContent">
-        {/* <HomeModal UTMSource={UTMSource} UTMMedium={UTMMedium} UTMCampaign={UTMCampaign}/> */}
+        {isFormVisible && (
+          <HomeModal
+            UTMSource={UTMSource}
+            UTMMedium={UTMMedium}
+            UTMCampaign={UTMCampaign}
+            isModalOpen={isFormVisible}
+            closeModal={() => setIsFormVisible(false)}
+          />
+        )}
       </div>
     </>
   );
