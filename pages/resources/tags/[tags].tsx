@@ -7,6 +7,7 @@ import { articleList } from "../../../utilities/utilities";
 import Error from "../../404";
 import { useState } from "react";
 import { Inter } from "next/font/google";
+import FooterNew from "../../../components/Footer-New";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -88,6 +89,7 @@ export default function Tags({ tags, list, error }: { tags: string, list: any[],
           />
         )}
       </div>
+      <FooterNew/>
     </div>
   );
 }

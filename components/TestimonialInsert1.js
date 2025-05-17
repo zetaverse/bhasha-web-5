@@ -17,7 +17,7 @@ function TestimonialInsert1({ testimonial1 }) {
         {/* Centered star image */}
         <Image
           width={188}
-          height={24}
+          height="auto"
           src={Stars}
           alt="Rating stars"
           className="!mx-auto"

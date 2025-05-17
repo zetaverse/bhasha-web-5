@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import MetaManager from "../components/MetaManager";
 import { Inter } from "next/font/google";
+import FooterNew from "../components/Footer-New";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -285,6 +286,7 @@ export default function TermsAndConditions() {
             </p>
           </section>
         </div>
+        <FooterNew/>
       </div>
     </>
   );

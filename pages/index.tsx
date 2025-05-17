@@ -21,6 +21,7 @@ import {
   callbackTitle,
   otherCourses,
 } from "../utilities/HomeContent";
+import FooterNew from "../components/Footer-New";
 
 const HomeModal = dynamic(() => import('../components/HomeModal'), {
   ssr: false,
@@ -100,6 +101,7 @@ export default function Home({utm_source, utm_medium, utm_campaign}: {utm_source
             setIsFormVisible={setIsFormVisible}
           />
         </div>
+        <FooterNew/>
       </div>
       <div className="modalContent">
         {isFormVisible && (

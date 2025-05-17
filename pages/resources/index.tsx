@@ -5,6 +5,7 @@ import { articleList } from "../../utilities/utilities";
 import LearningGuide from "../../components/LearningGuide";
 import { Inter } from "next/font/google";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import FooterNew from "../../components/Footer-New";
 // import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -75,6 +76,7 @@ export default function ResourceCenter() {
         {learningGuides.length > 0 && <LearningGuide cardCount={5} showViewAll={true} />}
         {learnerstories.length > 0 && <BlogCatagoryCard subCategory="Learner Stories" blogList={learnerstories} />}
       </div>
+      <FooterNew/>
     </>
   );
 }

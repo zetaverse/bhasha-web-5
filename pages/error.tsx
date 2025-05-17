@@ -3,6 +3,7 @@
 import router, { useRouter } from "next/router";
 import Navbar from "../components/Navbar";
 import MetaManager from "../components/MetaManager";
+import FooterNew from "../components/Footer-New";
 
 export default function Error() {
 //   const router = useRouter();
@@ -43,6 +44,7 @@ export default function Error() {
           Go to home
         </button>
       </div>
+      <FooterNew/>
     </>
   );
 }
