@@ -470,11 +470,88 @@ export const testimonialTitle = "Reviews about our Malayalam Speaking Classes";
 
 export const reviews = [
   {
+    name: "Rory Nicolls",
+    designation: "Embedded Software Engineer",
+    review:
+      "I'm Rory Nicolls, an Embedded Software Engineer from Canada. I joined Bhasha to learn Malayalam so I could connect better with my fiancée’s family in Kerala. Learning Malayalam online with Anupama Santhilatha has been a wonderful experience. Her patience, guidance, and cultural insights have made Malayalam speaking classes both enjoyable and meaningful. It’s amazing to be in Canada and still learn directly from a native Malayali! I’m excited to continue with the next levels. Thank you, Anupama and the Bhasha team. നന്ദി!",
+    imageURL: "/Images/Testimonials/Malayalam/bhasha-malayalam-learner-rory-nicolls.webp",
+  },
+  {
+    name: "Jason Rego",
+    designation: "Head of Sales",
+    review:
+      "Living in Dubai, where many Keralites reside, I wanted to understand and communicate in basic Malayalam. My experience with Bhasha's Online Malayalam Classes has been truly pleasant and fulfilling. Anupama Ma’am is warm, patient, and incredibly attentive to detail, qualities that define a great teacher. She focuses on genuine learning rather than the monetary aspect, and I would wholeheartedly recommend her to anyone looking to learn Malayalam online. Grateful for this meaningful learning journey!",
+    imageURL: "/Images/Testimonials/Malayalam/bhasha-malayalam-learner-jason-rego.webp",
+  },
+  {
+    name: "Aparna Komakula",
+    designation: "Development Engineer",
+    review:
+      "The online Malayalam course by Bhasha has been an invaluable experience. My tutor, Asha, brought warmth and passion to every session, creating a comfortable and encouraging environment. Thanks to her support, my Malayalam learning journey has been truly rewarding—my improved speaking skills have even been appreciated by my Malayalam-speaking friends and family. I'm grateful for Asha's dedication throughout this course.",
+    imageURL: "/Images/Testimonials/Malayalam/bhasha-malayalam-learner-aparna-komakula.webp",
+  },
+  {
+    name: "Meraj Banu",
+    designation: "Senior Representative",
+    review:
+      "Anupama Ma’am has been an incredible teacher who made learning Malayalam online seamless and enjoyable. Her patient and clear teaching style helped me grasp the nuances of the language at my own pace. The Malayalam language classes were well-structured, and her constant encouragement boosted my confidence in speaking and understanding Malayalam. I'm truly grateful for her dedication and support throughout this journey.",
+    imageURL: "/Images/Testimonials/Malayalam/bhasha-malayalam-learner-meraj-banu.webp",
+  },
+  {
+    name: "Varun",
+    designation: "Software Engineer",
+    review:
+      "I had the privilege of joining Online Malayalam Classes with Anupama Ma'am, and I couldn’t have asked for a better teacher. Her patience, structured approach, and ability to simplify complex lessons made it easy and enjoyable to learn Malayalam. She tailored each session to my pace, helping me build a strong foundation and improve my conversational skills. Her passion for teaching and constant encouragement kept me motivated throughout. I highly recommend Anupama Ma'am to anyone looking to start or enhance their Malayalam learning journey.",
+    imageURL: "/Images/Testimonials/Malayalam/bhasha-malayalam-learner-varun.webp",
+  },
+  {
+    name: "M.D. Venkatesh",
+    designation: "Business Owner",
+    review:
+      "I joined Bhasha’s Malayalam Language Classes to better communicate with my Malayalam-speaking clients. Anupama Ma'am is an excellent coach—she explains meanings, usage, tone, and pronunciation clearly, often using multiple languages to make things easier. Her flexibility with class timings was especially helpful given my unpredictable work schedule. Thanks to her and the well-designed course, learning Malayalam has been a smooth and rewarding experience. I highly recommend both the course and the coach to anyone looking to learn the language.",
+    imageURL: "/Images/Testimonials/Malayalam/bhasha-malayalam-learner-md-venkatesh.webp",
+  },
+  {
+    name: "Akshara Panicker",
+    designation: "Student",
+    review:
+      "A big thank you to Anupama Ma’am for teaching me with such patience and enthusiasm. Through her guidance and hard work, I have improved my speaking skills, which has benefited me greatly. Her motivation during every session made learning Malayalam truly enjoyable, and I never wanted to miss a class. You made every session lively and engaging. I’m happy that I took my Malayalam classes online with you. Thank you for everything!",
+    imageURL: "/Images/Testimonials/Malayalam/bhasha-malayalam-learner-akshara-panicker.webp",
+  },
+  {
+    name: "Dr. Bala",
+    designation: "Medical Doctor",
+    review:
+      "Mrs. Anupama is very patient, methodical and understanding in her teaching. The pace is even and to our specific requirements. Glad that I joined the course and happy that she is my tutor.",
+    imageURL: "/Images/Testimonials/Malayalam/bhasha-malayalam-learner-dr-bala.webp",
+  },
+  {
+    name: "Hima Bindu",
+    designation: "",
+    review:
+      "After moving to Calicut six years ago, I had been trying to learn Malayalam without much success—until I found Bhasha’s Malayalam classes online. Asha Ma'am was a wonderful mentor—patient, supportive, and especially helpful with pronunciation, which can be quite challenging in Malayalam. The online Malayalam learning experience was smooth and flexible, fitting perfectly into my schedule. Thank you, Asha Ma'am and the Bhasha team!",
+    imageURL: "/Images/Testimonials/Malayalam/bhasha-malayalam-learner-hima-bindu.webp",
+  },
+  {
+    name: "Rukmini Menon",
+    designation: "Engineer",
+    review:
+      "My Malayalam classes have been a great experience, especially with a supportive instructor who makes learning enjoyable. The well-structured lessons have helped me gain confidence and improve my language skills.",
+    imageURL: "/Images/Testimonials/Malayalam/bhasha-malayalam-learner-rukmini-menon.webp",
+  },
+  {
     name: "Saatvik Upadhyay",
     designation: "Software Developer",
     review:
       "I undertook the Malayalam classes online as a proactive step in preparing for my marriage to a Malayali woman. My instructor Reshmi Ma'am proved invaluable in equipping me with the language skills needed to foster stronger bonds with my future family and friends. Instructor Reshmi's teaching style was not only comprehensive but also tailored to the specific needs of her students. Her patience and encouragement made the Malayalam learning process enjoyable and effective. The course structure was well-designed, covering essential aspects of Malayalam while keeping the lessons engaging and interactive. I now feel confident in my ability to communicate effectively and connect with my future Malayali family and friends. I am delighted with the outcome of Bhasha's Malayalam learning classes and appreciate Reshmi Ma'am's dedication and support.",
     imageURL: "/Images/Testimonials/Malayalam/bhasha-malayalam-learner-saatvik-upadhyay.webp",
+  },
+  {
+    name: "Vasudevan",
+    designation: "",
+    review:
+      "I joined Malayalam online classes with Bhasha in April 2024, and the experience was truly enriching. My teacher, Asha Ma’am, was caring, flexible with timings, and made each session interactive and engaging. Her patient guidance and real-time corrections helped me start learning Malayalam with ease. I'm grateful to Bhasha and Asha Ma’am for making the journey so smooth and enjoyable.",
+    imageURL: "/Images/Testimonials/Malayalam/bhasha-malayalam-learner-vasudevan.webp",
   },
   {
     name: "D. Thiruselvan",

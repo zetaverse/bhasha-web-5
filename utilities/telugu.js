@@ -513,6 +513,20 @@ export const testimonialTitle = "Reviews about our Telugu Speaking Course";
 
 export const reviews = [
   {
+    name: "Dr. Jenifa Shoibam",
+    designation: "Resident Doctor",
+    review:
+      "​I'm a resident doctor based in Vizag, and after moving here in October 2024, I struggled with patient communication due to the language barrier. While searching for flexible Telugu Learning Classes, I came across Bhasha.io, and I’m so glad I did. Hema Ma'am, my coach, has been exceptional. She's professional, punctual, and teaches in a simple, easy-to-understand way. Her flexibility with my erratic schedule and her motivating assignments kept me engaged throughout. Thanks to her, I’m already able to understand my patients and hold basic conversations. I'm excited to continue and learn Telugu online with even more confidence in the coming weeks.",
+    imageURL: "/Images/Testimonials/Telugu/bhasha-telugu-learner-dr-jenifa-shoibam.webp",
+  },
+  {
+    name: "Shree Dudhat",
+    designation: "",
+    review:
+      "​​I’ve been working with Swapnaji for almost 4 months now, and she has been an amazing Telugu teacher! I have learned so much in each class and am shocked at how much she has been able to teach me in such a short time. Swapnaji is incredibly supportive, kind, and helpful. She answers all of my questions and provides gentle guidance that has helped build my confidence, especially in speaking. Her lessons are targeted to make learners conversational in Telugu and with just half of my classes done, I already feel comfortable with basic conversations. Swapnaji has done a phenomenal job helping me learn Telugu, and I am so grateful to have her as my teacher. ",
+    imageURL: "/Images/Testimonials/Telugu/bhasha-telugu-learner-shree-dudhat.webp",
+  },
+  {
     name: "Dr. Anas Ali",
     designation: "Doctor",
     review:

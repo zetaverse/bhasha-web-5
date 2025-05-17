@@ -411,6 +411,48 @@ export const testimonialTitle = "Reviews about our Tamil Speaking Course";
 
 export const reviews = [
   {
+    name: "Anjali Patil",
+    designation: "Actor",
+    review:
+      "Learning Tamil online with Sudha Ma'am has been one of my greatest joys. As someone who loves a systematic approach, I was able to grasp Tamil grammar clearly and methodically. Her focus on practice, pronunciation, patience, and her generosity in teaching truly make her one of the best! I am grateful for this wonderful experience with Bhasha’s Tamil classes and will always credit her for making it so special. Thank you so much, Sudha Ma'am, for helping me learn Tamil.",
+    imageURL: "/Images/Testimonials/Tamil/bhasha-tamil-learner-anjali-patil.webp",
+  },
+  {
+    name: "Akanksha Dubey",
+    designation: "Homemaker",
+    review:
+      "I joined Bhasha to familiarise myself with Tamil and help my son with his homework. The Tamil Language Classes were well-structured and thoughtfully planned. My teacher, Sudha Ma’am, was incredibly supportive and even helped with questions from my son’s school curriculum. The course effectively covered both spoken and written Tamil. I'm grateful for the opportunity to learn Tamil online through such a well-managed platform.",
+    imageURL: "/Images/Testimonials/Tamil/bhasha-tamil-learner-akanksha-dubey.webp",
+  },
+  {
+    name: "Dr. Anishka Chourey",
+    designation: "Doctor",
+    review:
+      "Today, as I complete my final class with Bhasha’s Tamil Language Course, I feel deeply grateful. Special thanks to my wonderful mentor, Gowri Ma’am. As a doctor, I was initially unsure about managing time to learn Tamil online, but her flexibility and support made it seamless. Gowri’s clear teaching style, quick recaps, and deep knowledge of Tamil helped me stay on track and build confidence. Thanks to Bhasha, I’ve not only grown in my language skills but also developed a true appreciation for Tamil. Thank you for making it so easy to learn Tamil online despite my busy schedule",
+    imageURL: "/Images/Testimonials/Tamil/bhasha-tamil-learner-dr-anishka-chourey.webp",
+  },
+  {
+    name: "Himanshu Gupta",
+    designation: "Computer Programmer",
+    review:
+      "I joined Bhasha’s Online Tamil Classes after moving to Chennai, hoping to learn basic Tamil — and it’s been worth every minute. Gayathri Ma’am’s ability to connect Hindi and Tamil made learning Tamil online easy and relatable. The customised lessons and practical syllabus gave me the confidence to start speaking Tamil and helped me settle into a new city smoothly. Big thanks to the entire Bhasha team",
+    imageURL: "/Images/Testimonials/Tamil/bhasha-tamil-learner-himanshu-gupta.webp",
+  },
+  {
+    name: "Rajashekhar IB",
+    designation: "Joint Director, Karnataka Govt.",
+    review:
+      "Bhasha’s Tamil Language Classes have been incredibly helpful—not just during the course, but also as a reference after completion. Sudha Ma’am’s discipline, punctuality, and passion for teaching are truly commendable. She patiently repeats lessons until everything is clear and makes learning Tamil online feel simple and approachable. Thanks to her, I’m now able to understand and communicate in Tamil more confidently. Easily a five-star experience! I’m looking forward to taking more classes with her in the future",
+    imageURL: "/Images/Testimonials/Tamil/bhasha-tamil-learner-rajashekhar-ib.webp",
+  },
+  {
+    name: "Vijay Rao",
+    designation: "Retired Banker",
+    review:
+      "I discovered Bhasha.io while searching online for Tamil language tutors. From the very first interaction, the team was responsive and flexible — I could choose my own schedule, which was a big plus. I enrolled in their Tamil Speaking Course with Ms. Sudha as my tutor. She taught using a well-structured Tamil curriculum that covered grammar, tenses, numbers, and everyday conversations. Each session ended with homework, which really helped reinforce the lessons. Thanks to Sudha Ma’am’s guidance and the practical syllabus, learning Tamil has been an enjoyable and rewarding experience. I’m truly satisfied with the course and would recommend it to anyone looking to speak Tamil with confidence.",
+    imageURL: "/Images/Testimonials/Tamil/bhasha-tamil-learner-vijay-rao.webp",
+  },
+  {
     name: "Garima Gupta",
     designation: "Corporate Strategist",
     review:
@@ -426,7 +468,7 @@ export const reviews = [
   },
   {
     name: "Smrite Bhatia",
-    designation: "Student",
+    designation: "Mrs. India, 2019",
     review:
       "I am writing to express my sincere gratitude and appreciation for the exceptional teaching provided by my language tutor Sudha Ma'am at Bhasha's Tamil learning course. She has demonstrated an unwavering commitment to helping students like me learn the Tamil language. Her teaching style is not only engaging but also effective. She has a unique ability to make the language understandable and approachable. Sudha Ma'am was patient, supportive, and always willing to go the extra mile to ensure that I grasped the language with confidence.",
     imageURL: "/Images/Testimonials/Tamil/bhasha-tamil-learner-smrite-bhatia.webp",
