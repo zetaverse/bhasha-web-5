@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import Error from "./error";
 import MetaManager from "../components/MetaManager";
 import Introduction from "../components/Introduction";
+import FooterNew from "../components/Footer-New";
 // import Curriculum from "../components/Curriculum";
 // import TestimonialInsert1 from "../components/TestimonialInsert1";
 // import ClassExp from "../components/ClassExp";
@@ -174,6 +175,7 @@ export default function Language({ introduction, selectedLanguage, utm_source, u
             title="Similar courses"
           />
         </div>
+        <FooterNew />
       </div>
       <div className="modalContent">
         {isFormVisible && (

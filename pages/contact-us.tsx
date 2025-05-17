@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import MetaManager from "../components/MetaManager";
 import { UTMContext } from "../Context/UTMContext";
 import { useEffect, useContext } from "react";
+import FooterNew from "../components/Footer-New";
 
 export default function ContactUs({utm_source, utm_medium, utm_campaign}: {utm_source: string, utm_medium: string, utm_campaign: string}) {
   const {UTMSource, UTMMedium, UTMCampaign, setUTMSource, setUTMMedium, setUTMCampaign} = useContext(UTMContext);
@@ -194,6 +195,7 @@ export default function ContactUs({utm_source, utm_medium, utm_campaign}: {utm_s
           </div>
         </section>
       </div>
+      <FooterNew/>
     </>
   );
 }

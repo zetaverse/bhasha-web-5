@@ -53,7 +53,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={poppins.className}>
       <Head>
-      <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+      {/* <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> */}
       </Head>
       <UTMProvider>
         <div
@@ -71,15 +71,15 @@ export default function App({ Component, pageProps }: AppProps) {
           }}
         >
           <InfinitySpin
-            visible={true}
+            // visible={true}
             width="200"
             color="#4B2AAD"
-            ariaLabel="infinity-spin-loading"
+            // ariaLabel="infinity-spin-loading"
           />
         </div>
         <div id="contentBody">
           <Component {...pageProps} />
-          <FooterNew />
+         
           <div className="!flex !flex-row !justify-between lg:!justify-end !fixed !z-1030 !bottom-0 !right-0 !left-0">
             <CTA />
             <WA />

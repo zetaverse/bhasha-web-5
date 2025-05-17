@@ -11,10 +11,10 @@ function HomeIntroduction(props) {
   };
 
   return (
-    <div id="homeIntroduction" className="lg:max-w-[88%]  !my-4 lg:!pt-12 w-full lg:!px-4 lg:!mx-auto">
-      <div className="!flex !flex-wrap !m-auto lg:!ms-12 !px-3">
-        <div className="!flex !flex-col !justify-start !px-3 !pe-0 !w-full lg:!w-1/2 xl:!w-1/2 lg:!order-1 !order-2 grow-0 shrink-0 basis-auto">
-          <h1 className="!text-start !my-4 lg:!my-4">
+    <div id="homeIntroduction" className="lg:max-w-[88%]  !my-4 lg:!pt-12 w-full lg:!px-2 lg:!mx-auto">
+      <div className="!flex !flex-wrap !m-auto lg:!ms-4">
+        <div className="!flex !flex-col !justify-start !px-2 !pe-0 !w-full lg:!w-8/12 xl:!w-1/2 lg:!order-1 !order-2 grow-0 shrink-0 basis-auto">
+          <h1 className="!text-start !my-3 lg:!my-3">
             Learn an <span className="text-[#4B2AAD]">{heading}</span>
             <span className="block"> anytime, anywhere </span>
           </h1>

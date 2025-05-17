@@ -59,7 +59,7 @@ function Introduction(props) {
 
   return (
     <div id="introduction" className="lg:max-w-[88%] !w-full lg:!mx-auto !px-3 !my-4 lg:!my-12 lg:!pt-2">
-      <div className="!flex !flex-wrap !justify-center !m-auto  lg:!ms-12 !px-3">
+      <div className="!flex !flex-wrap !justify-center !m-auto  lg:!ms-4">
         {/* <div className="col-lg-1" /> */}
         <div className="grow-0 shrink-0 basis-auto !w-full lg:!w-7/12 xl:!w-1/2 order-2 lg:!order-1 !flex !flex-col !p-3">
           {/* <h1 className="text-start fw-bold">
@@ -134,14 +134,14 @@ function Introduction(props) {
             </div>
           </div>
         </div>
-        <div className="grow-0 shrink-0 basis-auto sm:!w-full lg:!w-5/12 !order-1 lg:!order-2 !flex !flex-col !items-center">
+        <div className="grow-0 shrink-0 basis-auto sm:!w-full lg:!w-5/12 !order-1 lg:!order-2 !flex !flex-col !items-center self-center">
           <div className="!relative !w-full min-w-[400px]">
             <Image
               alt={`Photo of Bhasha's ${heading} Classes Student`}
               aria-label={`${heading} Classes Online`}
               className="image"
-              height={800}
-              width={800}
+              height={100}
+              width={50}
               layout="responsive"
               objectFit="contain"
               sizes="(min-width: 990px) 50vw, 100vw"

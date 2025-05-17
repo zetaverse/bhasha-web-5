@@ -9,6 +9,7 @@ import { Inter } from "next/font/google";
 import Breadcrumbs from "../../../components/Breadcrumbs";
 import LearningGuide from "../../../components/LearningGuide";
 import { useState, useEffect } from "react";
+import FooterNew from "../../../components/Footer-New";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -160,6 +161,7 @@ export default function Resources({ subCategory, list, error }: { subCategory: s
           />
         )}
       </div>
+      <FooterNew/>
     </div>
   );
 }

@@ -29,8 +29,8 @@ function LearnersReview(props) {
   {reviews
     .filter((_, idx) => idx < 4)
     .map((review) => (
-      <div className='!flex-grow !flex-shrink-0 !basis-0 !py-4 !px-1'>
-      <div className=" !justify-center !px-4" key={review.name}>
+      <div className='!flex-grow !flex-shrink-0 !basis-0 !py-4 !px-1' key={review.name}>
+      <div className=" !justify-center !px-4" >
         <Review
           imageURL={review.imageURL}
           name={review.name}

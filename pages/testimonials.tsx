@@ -20,6 +20,7 @@ import { reviews as GujaratiReviews } from "../utilities/gujarati";
 import Navbar from "../components/Navbar";
 import MetaManager from "../components/MetaManager";
 import { UTMContext } from "../Context/UTMContext";
+import FooterNew from "../components/Footer-New";
 
 
 const HomeModal = dynamic(() => import('../components/HomeModal'), {
@@ -41,8 +42,8 @@ const HomeModal = dynamic(() => import('../components/HomeModal'), {
       {
         ssr: false,
         // loading: () => <p>Loading...</p>,
-      }
-    );
+      }
+    );
 
 const InitialState = {
   allLang: true,
@@ -245,7 +246,7 @@ export default function Testimonial({ feedback, lang, utm_source, utm_medium, ut
   ))}
 </div>
 
-
+{/* @ts-ignore */}
             <Masonry
               className={displayState.allLang ? "!hidden sm:!flex" : "!hidden"}
               columnsCount={3}
@@ -292,6 +293,7 @@ export default function Testimonial({ feedback, lang, utm_source, utm_medium, ut
 
               return (
                 <>
+                {/* @ts-ignore */}
                   <Masonry
                     className={
                       displayState[language] ? "!hidden sm:!flex" : "!hidden"
@@ -348,6 +350,7 @@ export default function Testimonial({ feedback, lang, utm_source, utm_medium, ut
           />
         )}
       </div>
+      <FooterNew/>
     </>
   );
 }
