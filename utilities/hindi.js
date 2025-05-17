@@ -504,6 +504,55 @@ export const testimonialTitle = "Reviews about our Online Spoken Hindi Course";
 
 export const reviews = [
   {
+    name: "Sunniva",
+    designation: "Landscape Architect",
+    review:
+      "My name is Sunniva, and I’m a landscape architect. I found this Hindi Language Course online. The lessons were well-structured, and I learned a lot in a short time. Rumana is a warm, funny teacher with a great sense of humour, which made every class enjoyable. I truly recommend this course to anyone looking to learn Hindi in a fun and effective way.",
+    imageURL: "/Images/Testimonials/Hindi/bhasha-hindi-student-sunniva.webp",
+  },
+  {
+    name: "Dr. Lakshminarayan",
+    designation: "Doctor",
+    review:
+      "I wanted to learn Hindi for my professional needs and to converse with my daughter, who recently started learning it in school. I found Bhasha.io through a Google search and was fortunate to be paired with Rumana ma’am as my tutor. Her Hindi language classes were simple, engaging, and filled with real-life conversational examples. She patiently explained core concepts, making it easy to learn Hindi online. I genuinely looked forward to every class and will truly miss them. I highly recommend Bhasha.io and Rumana ma’am to anyone looking to learn Hindi online.",
+    imageURL: "/Images/Testimonials/Hindi/bhasha-hindi-student-dr-lakshminarayan.webp",
+  },
+  {
+    name: "Madhumita Subramani",
+    designation: "Digital Marketing Manager",
+    review:
+      "I wanted to speak Hindi with friends and family, and I’m very grateful to Bhasha.io and Gowri Ma'am for helping me do that. The online Hindi speaking course was customised to my needs, always punctual, and well-structured with homework and speaking practice. As a Tamil speaker, I found it especially helpful that Gowri Ma'am made clear connections between Tamil and Hindi. It really boosted my confidence and improved my skills in learning spoken Hindi.",
+    imageURL: "/Images/Testimonials/Hindi/bhasha-hindi-student-madhumita-subramani.webp",
+  },
+  {
+    name: "Kavin Kumar",
+    designation: "Engineer",
+    review:
+      "I joined Bhasha to better understand and communicate with my colleagues, and my experience with their spoken Hindi classes online has been truly rewarding. The lessons were well-structured, and the instructor made complex topics easy to grasp. Their engaging style and ample practice opportunities made learning Hindi enjoyable and effective. I now feel much more confident in my ability to speak Hindi—thank you for the wonderful experience!",
+    imageURL: "/Images/Testimonials/Hindi/bhasha-hindi-student-kavin-kumar.webp",
+  },
+  {
+    name: "Dr Malar Sivaraman",
+    designation: "Director & Professor",
+    review:
+      "I took up the online Hindi language course with Bhasha out of my interest in learning new languages. I was assigned Gowri Ma’am as my tutor, and she’s been a fantastic teacher. Her classes were engaging and enjoyable, making the experience of learning Hindi online truly enriching.",
+    imageURL: "/Images/Testimonials/Hindi/bhasha-hindi-student-dr-malar-sivaraman.webp",
+  },
+  {
+    name: "Arivazhagan Jayapal",
+    designation: "",
+    review:
+      "Thank you for the incredible guidance and support throughout my Hindi language course. Your engaging teaching style and ability to simplify complex topics made it easy to confidently learn Hindi online. I truly appreciate how you personalised each lesson to my learning needs and created a comfortable space to ask questions and explore the language freely. Your patience and encouragement have made this journey both enjoyable and effective. I feel fortunate to have you as my tutor!",
+    imageURL: "/Images/Testimonials/Hindi/bhasha-hindi-student-arivazhagan-jayapal.webp",
+  },
+  {
+    name: "Ruchika G.S.",
+    designation: "",
+    review:
+      "Kavitha mam is the best teacher I could have found to learn Hindi. I'd go as far as to say she is one of the best teachers I have ever encountered.The focus of the classes is on mastering the grammar and speaking (correctly). You'll learn the most basic and important grammar structures first, so you're able to start conversing right after the very first class. I've only taken a week of classes with kavitha mam but I've learnt as much as a month at a regular language. Besides being a professional, Kavitha mam is also a very genuine, kind, patient and funny human being. All in all, learning Hindi with Kavitha mam was the highlight of my career. Whether you're looking to learn basics hindi to get around India or you are serious with your study, I totally recommend Kavitha mam as a mentor.",
+    imageURL: "/Images/Testimonials/Hindi/bhasha-hindi-student-ruchika-gs.webp",
+  },
+  {
     name: "Dr. Sushruth",
     designation: "Orthopaedic Surgeon",
     review:

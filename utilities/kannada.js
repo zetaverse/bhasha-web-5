@@ -541,6 +541,97 @@ export const testimonialTitle = "What learners say about our Kannada Speaking Co
 
 export const reviews = [
   {
+    name: "Alakananda Sen",
+    designation: "Academician",
+    review:
+      "Namaskara, I’m Alakananda Sen, an academician with over 25 years in education. I had the privilege of learning  Kannada online from the exceptional Ms. Shilpa through Bhasha.io’s Kannada Speaking Classes. Her passion for teaching truly stood out—she went beyond the course material to help me understand the finer nuances of the language, making every session engaging and meaningful. This journey to learn Kannada has been smooth, thanks to both Ms. Shilpa and the supportive Bhasha.io team. I now speak Kannada with much more confidence and joy. Naanu eega Kannadadalli santoshadinda maatadtairteeni. Thank you!",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-alakananda-sen.webp",
+  },
+  {
+    name: "Anilkumar Kalappattil",
+    designation: "Civil Engineer",
+    review:
+      "I started the Kannada Speaking Course with Bhasha.io to better communicate while living with my family in Bangalore. The platform was easy to reach with great support, and the study materials were well-structured for someone new to the language. My teacher was clear, patient, and flexible with timings, always open to clearing doubts. I highly recommend Bhasha.io to anyone looking to learn Kannada online simply and effectively.",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-anilkumar-kalappattil.webp",
+  },
+  {
+    name: "C John George",
+    designation: "Business Owner",
+    review:
+      "I wanted to learn Kannada, and Bhasha.io proved to be an excellent platform for it. The online Kannada classes were well-structured, and I must thank my teacher, Rohini, for making each session engaging and easy to follow. Her cheerful attitude and enthusiasm made the 20 sessions truly enjoyable and kept me motivated to learn Kannada. Best wishes to Rohini and the Bhasha.io team — thank you for a wonderful learning experience!",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-c-john-george.webp",
+  },
+  {
+    name: "Dr. Meera Nandakumar",
+    designation: "ENT Specialist",
+    review:
+      "I’m Dr. Meera Nandakumar from Kerala. After moving to Mangalore for work, I needed to learn Kannada to communicate effectively with my patients. I initially tried YouTube videos and Google Translate, but they didn’t help much. A friend recommended Bhasha.io, and I joined their one-on-one Kannada classes online. My instructor, Mrs. Divya Sunil, was outstanding—her patience, enthusiasm, and ability to simplify concepts made learning Kannada so much easier. The structured, well-paced study material also helped me progress steadily. By the end of the course, I could speak and understand Kannada with confidence. Thank you, Divya Ma’am and Bhasha.io, for such a great learning experience. I highly recommend this platform to anyone interested in learning Kannada.",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-dr-meera-nandakumar.webp",
+  },
+  {
+    name: "Harshal Kale",
+    designation: "Deputy Director, Myntra",
+    review:
+      "My friend Joveena and I joined the buddy Kannada language classes with Bhasha. We had no prior knowledge, but the step-by-step approach, interactive sessions, and real-life conversations made it simple and enjoyable. Sumangala Ma'am was incredibly patient and supportive, which made learning Kannada feel effortless. Thanks to Bhasha.io, we’re now excited to continue our Kannada language learning journey",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-harshal-kale.webp",
+  },
+  {
+    name: "Minoo Pal Singh",
+    designation: "Business Owner",
+    review:
+      "I moved to Bangalore in 2012 and always wanted to learn Kannada, but only took the leap after discovering the Kannada speaking course at Bhasha.io. Learning Kannada online with Anita Vijayamohan has been a wonderful experience. As a Punjabi speaker, I found the language challenging, but her patient and engaging teaching style made it enjoyable and effective. Learning alongside my classmate Sita added extra motivation, and the structured course material made progress easy. Thanks to Anita, Sita, and the Bhasha team for making this journey meaningful and memorable!",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-minoo-pal-singh.webp",
+  },
+  {
+    name: "Nehal Jha",
+    designation: "",
+    review:
+      "I recently completed two levels of my Kannada course through Bhasha.io’s online Kannada classes, and it was an enriching experience. Rekha ma’am is the kind of teacher I never knew I needed: patient, engaging, and always encouraging. Her classes made learning Kannada online truly enjoyable, and I’ve never picked up a language this effectively before. A big thank you to Bhasha.io and Amrutha ma’am for making this journey so impactful in such a short time!",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-nehal-jha.webp",
+  },
+  {
+    name: "Raja Sundararaj",
+    designation: "Production Resource Manager",
+    review:
+      "I’m from Tamil Nadu and recently joined a translation job in Bengaluru. To expand my role, I decided to enrol in Kannada learning classes to improve my Kannada skills. Thanks to Teena and Rohini Ma’am, I’ve gained confidence in reading, writing, and speaking Kannada. Special thanks to Rohini Ma’am for challenging my skills and helping me read Kannada in such a short time. My confidence has grown, and I can now communicate with locals and read the Kannada script. I’m grateful to Bhasha.io for helping me learn Kannada online and for connecting hearts through language.",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-raja-sundararaj.webp",
+  },
+  {
+    name: "Reshmi Adhikari Manamal",
+    designation: "Software Engineer",
+    review:
+      "I joined Bhasha’s Kannada language course two months ago, and Anita Vijay, my coach, has been exceptional in helping me learn Kannada. Beyond the course materials, she goes the extra mile to teach me commonly used phrases and idioms, which have helped me handle everyday situations with ease. Thanks to Anita's guidance, I’ve made significant progress—I can now follow Kannada conversations and respond confidently. Anita is not just a coach, but a friend, and through her, I’ve gained a deeper understanding of the local culture. I’m grateful to Bhasha for helping me learn Kannada and to Anita for being a wonderful coach.",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-reshmi-adhikari-manamal.webp",
+  },
+  {
+    name: "Rita Anand",
+    designation: "",
+    review:
+      "Learning Kannada online with Bhasha has been a truly rewarding experience, especially since it aligned with my goal to learn Kannada after living in Bangalore for over 20 years. The well-structured Kannada language classes, along with Rohini ma’am's patient and encouraging guidance, made the journey enjoyable and effective. As a beginner, her teaching style helped me feel confident and comfortable. I’m excited to continue my Kannada learning journey with Bhasha!",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-rita-anand.webp",
+  },
+  {
+    name: "Sita Lekshmi",
+    designation: "General Manager, Renaissance",
+    review:
+      "Having lived in Bengaluru for three years, I decided to start learning Kannada just three months ago. I believe that learning the local language is empowering and connects you more deeply with the culture and people. As a South Indian fluent in Tamil and Malayalam, learning Kannada felt like a natural next step. Initially, I was sceptical about online platforms, but discovering Bhasha and meeting Anita Vijayamohan changed everything. Anita’s patience, passion, and dedication made the Kannada speaking classes incredibly engaging. Her enthusiasm was contagious, and I felt a positive shift in my perception of the language. Having Minoo Pal Singh as my class buddy added fun and energy to the sessions, making the experience even more enjoyable. Thank you, Bhasha and Anita, for this enriching journey. I highly recommend your services to anyone looking to learn Kannada.",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-sita-lekshmi.webp",
+  },
+  {
+    name: "Suvro Banerjee",
+    designation: "Software Engineer",
+    review:
+      "As someone who calls Bangalore home and loves exploring Karnataka, I felt a strong urge to learn Kannada to connect better with the locals. With a busy professional schedule, I found Bhasha's Kannada classes online to be well-structured and practical, helping me converse easily. I’m incredibly grateful to Anita ma’am, who taught me over 20 classes in three months. Her passion for teaching and the language made the experience enriching. We went beyond the course material to explore colloquial phrases and cultural anecdotes, making learning fun and engaging. Thanks to Anita ma’am, I now understand Kannada well, can speak simple sentences, and enjoy conversing with friends and strangers. I’m also able to refer back to the course materials and notes for further learning. Most importantly, I’ve fallen in love with Kannada, and I look forward to staying connected with the language. Thank you, Bhasha, for this wonderful experience!",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-suvro-banerjee.webp",
+  },
+  {
+    name: "Tanuja K",
+    designation: "Operations Manager",
+    review:
+      "I’m from Kerala and moved to Bengaluru a few years ago. Although I communicated in English, I wanted to learn Kannada to better connect with the local community. I joined online Kannada classes with Sumangala ma’am through Bhasha.io, and the experience was fantastic. The lessons were well-structured and easy for a beginner like me. Each session included homework to reinforce learning, and ma’am addressed all my questions, correcting my pronunciation along the way. She was very understanding and flexible, ensuring that I didn't miss any lessons despite some absences. Thanks to her guidance, my daily interactions are now much smoother, and I’ve even started speaking Kannada at home. I feel much more confident in conversations and understand the language better. Thank you, ma’am!",
+    imageURL: "/Images/Testimonials/Kannada/bhasha-kannada-learner-tanuja-k.webp",
+  },
+  {
     name: "Dr. Prasad",
     designation: "Doctor",
     review:

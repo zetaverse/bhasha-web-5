@@ -448,6 +448,41 @@ export const testimonialTitle = "Reviews about our Marathi Learning Classes";
 
 export const reviews = [
   {
+    name: "Mudit Kapoor",
+    designation: "Advocate, Bombay High Court",
+    review:
+      "Thank you, Kavita Ma’am, for making learning Marathi online such a delightful experience. Your online Marathi classes were always engaging, and your clear explanations of even the most complex grammar rules made a big difference. The one-on-one attention you gave truly helped me progress faster. Grateful for your dedication and support throughout this journey.",
+    imageURL: "/Images/Testimonials/Marathi/bhasha-marathi-learner-mudit-kapoor.webp",
+  },
+  {
+    name: "K.B. Seshadri",
+    designation: "Senior VP, ValueLabs",
+    review:
+      "At my senior age, I was unsure about picking up a new language, but I always wanted to learn conversational Marathi. I joined Bhasha’s Marathi Language Course, and from the very first demo, Kavitha ji filled me with confidence and motivation. Each session was a joy. Her patience, encouragement, and ability to explain complex Marathi words in English and Hindi made learning Marathi online both effective and enjoyable. Despite living in Bangalore with limited exposure to Marathi, I gradually gained confidence, from understanding just 30–40% to now understanding nearly everything and speaking with 70% fluency. Kavitha ji’s energy, support, and flexibility made all the difference. The course content was practical, well-structured, and perfect for adult learners like me. I’m so glad I chose Bhasha and feel extremely fortunate to have had Kavitha ji as my mentor. It’s been a fulfilling journey of not just language, but personal growth",
+    imageURL: "/Images/Testimonials/Marathi/bhasha-marathi-learner-kb-seshadri.webp",
+  },
+  {
+    name: "Kailash Singh",
+    designation: "Software Engineer",
+    review:
+      "As a software engineer living in Pune, I wanted to improve my Marathi speaking skills for smoother day-to-day communication. Bhasha’s Spoken Marathi Classes were exactly what I needed. The course was well-structured, with lessons that built up gradually and included helpful revision slides. Pallavi Ma’am explained everything clearly, gave ample speaking practice, and made learning Marathi genuinely enjoyable. Highly recommended!",
+    imageURL: "/Images/Testimonials/Marathi/bhasha-marathi-learner-kailash-singh.webp",
+  },
+  {
+    name: "Lalitha Hariharan",
+    designation: "",
+    review:
+      "When I started Bhasha’s Marathi Speaking Course, I didn’t know a single word in Marathi. But thanks to Mrs. Kavita, it’s been a truly memorable journey. Her deep knowledge of both Marathi and English and her ability to explain in simple terms with relatable examples made learning Marathi easy and enjoyable. She patiently addressed all my doubts, even the silly ones, and shared additional resources like vlogs and movies to support my learning. Her dedication and passion for teaching are truly inspiring. I feel lucky to have been her student and would love to learn from her again.",
+    imageURL: "/Images/Testimonials/Marathi/bhasha-marathi-learner-lalitha-hariharan.webp",
+  },
+  {
+    name: "Manishika Ghosh",
+    designation: "Medical Student",
+    review:
+      "I joined Bhasha’s Marathi Speaking Classes to better connect with my patients as a student of Occupational Therapy, and it’s made a big difference. Learning from Pallavi Ma’am has been a great experience. Her lessons were clear, detailed, and always included verbal practice. With every class, I gained the confidence to form my own sentences, ask questions, and improve steadily. Thanks to this course, I can now write short paragraphs, understand conversations around me, and speak basic Marathi. It’s been a rewarding journey to learn Marathi online",
+    imageURL: "/Images/Testimonials/Marathi/bhasha-marathi-learner-manishika-ghosh.webp",
+  },
+  {
     name: "Dr. Shikha Agarwal",
     designation: "Doctor",
     review:
